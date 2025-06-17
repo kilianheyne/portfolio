@@ -1,1 +1,18 @@
-<p>my-skills works!</p>
+<section>
+    <h3>My skills</h3>
+    <div>
+        <div>
+            @for (item of skillListData.skillList; track $index) {
+                <app-skill></app-skill>
+            }
+        </div>
+        <div>
+            <span>I am currently learning</span>
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            <p>Show that you are motivated to contually improve your skills, implement innovative solutions and stay abreast of new technologies.</p>
+        </div>
+    </div>
+</section>
