@@ -24,6 +24,25 @@
     z-index: -10;
 }
 
+.logo-comp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    >img {
+        object-fit: contain;
+    }
+
+    > p {
+        color: white
+    }
+
+    > span {
+        color: #262d33;
+    }
+}
+
 body {
     background: #262d33;
 }
