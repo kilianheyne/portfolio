@@ -1,4 +1,55 @@
 section {
     display: flex;
     height: 100dvh;
+    color: white;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    img {
+        object-fit: contain;
+    }
+}
+
+#image-container {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+
+    img {
+        width: 100%;
+    }
+}
+
+#presi-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+
+    #headband {
+        display: flex;
+        justify-content: space-between;
+
+        #some {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+    h1 {
+        font-size: 56px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    #arrow-down-btn {
+        display: flex;
+        justify-content: center;
+    }
 }
