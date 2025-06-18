@@ -1,3 +1,5 @@
+@import '../../styles.scss';
+
 section {
     display: flex;
     height: 100dvh;
@@ -30,9 +32,25 @@ section {
         display: flex;
         justify-content: space-between;
 
+        #logo {
+            @include dFlex($fd: column, $jc: end);
+
+            >span:first-of-type {
+                font-size: 16px;
+                font-family: 'Anta';
+            }
+            >span:nth-of-type(2) {
+                font-size: 16px;
+                font-family: 'Josefin Sans';
+                font-weight: 300;
+                color: #89BCD9;
+            }
+        }
+
         #some {
             display: flex;
             flex-direction: column;
+            gap: 16px;
         }
     }
 
