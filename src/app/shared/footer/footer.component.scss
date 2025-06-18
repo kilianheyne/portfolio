@@ -1,0 +1,30 @@
+@import '../../../styles.scss';
+
+footer {
+    height: 144px;
+    background: $light-blue;
+    padding: 0 80px 30px 80px;
+    @include dFlex($jc: space-between);
+
+    >div {
+        height: 100%;
+    }
+}
+
+#legal-notice {
+    @include dFlex($jc: end, $ai: left, $fd: column);
+    
+
+    >span {
+        color: $dark-blue;
+    }
+}
+
+#logo {
+    @include dFlex($fd: column, $jc: end);
+}
+
+#some-icons {
+    @include dFlex($ai: flex-end);
+    gap: 12px;
+}

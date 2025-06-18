@@ -7,10 +7,11 @@ import { MySkillsComponent } from "./my-skills/my-skills.component";
 import { MyProjectsComponent } from "./my-projects/my-projects.component";
 import { MateRefsComponent } from "./mate-refs/mate-refs.component";
 import { ContactMeComponent } from "./contact-me/contact-me.component";
+import { FooterComponent } from "./shared/footer/footer.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, AboveTheFoldComponent, NavComponent, WhyMeComponent, MySkillsComponent, MyProjectsComponent, MateRefsComponent, ContactMeComponent],
+  imports: [RouterOutlet, AboveTheFoldComponent, NavComponent, WhyMeComponent, MySkillsComponent, MyProjectsComponent, MateRefsComponent, ContactMeComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
