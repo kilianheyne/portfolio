@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
+import { Skill } from './shared/interfaces/skill';
 
 @Injectable({
     providedIn: 'root',
 })
 export class SkilldataService {
-    skillList: Array<object> = [
+    skillList: Array<Skill> = [
       {
         image: 'assets/images/my-skills/angular.png',
         name: 'Angular',

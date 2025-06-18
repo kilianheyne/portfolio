@@ -8,6 +8,16 @@
     scroll-behavior: smooth;
 }
 
+.flex-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img-contain {
+    object-fit: contain;
+}
+
 .content-limit {
     width: 100%;
     max-width: 1920px;

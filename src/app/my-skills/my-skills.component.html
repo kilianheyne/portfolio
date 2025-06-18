@@ -1,9 +1,12 @@
-<section>
+<section class="content-limit">
     <h3>My skills</h3>
-    <div>
-        <div>
+    <div class="flex-center">
+        <div id="skill-overview">
             @for (item of skillListData.skillList; track $index) {
-                <app-skill></app-skill>
+                <div class="flex-center">
+                    <img src="{{item.image}}" alt="">
+                    <span>{{item.name}}</span>
+                </div>
             }
         </div>
         <div>
