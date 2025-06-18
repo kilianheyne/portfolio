@@ -32,7 +32,7 @@ $green: #95e063;
 // #endregion
 
 // #region headings
-h1, h2, h3 {
+h1, h2, h3, h4 {
     text-align: center;
 }
 
@@ -47,6 +47,11 @@ h2 {
 h3 {
     margin: 56px;
     font-size: 32px;
+}
+
+h4 {
+    margin: 56px;
+    font-size: 24px;
 }
 
 // #endregion
