@@ -5,16 +5,33 @@ section {
     padding: 0 160px 0 160px;
 }
 
-h3 {
-    
+#my-skills {
+    width: 100%;
+    @include dFlex($jc: center, $ai: center, $fd: row);
 }
 
 #skill-overview{
     @include dFlex();
     flex-flow: wrap;
     width: 50%;
+    gap: 48px;
 
     >div {
         @include dFlex($fd: column);
+
+        >span {
+            margin-top: 8px;
+            color: $light-blue;
+        }
     }
+}
+
+#learning {
+    @include dFlex($fd: column);
+    width: 50%;
+    gap: 24px;
+    background: url('../../../public/assets/images/my-skills/currently-learning/backdrop.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }

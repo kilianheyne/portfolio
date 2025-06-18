@@ -1,19 +1,19 @@
 <section class="content-limit">
     <h3>My skills</h3>
-    <div class="flex-center">
+    <div id="my-skills">
         <div id="skill-overview">
             @for (item of skillListData.skillList; track $index) {
                 <div>
-                    <img src="{{item.image}}" alt="">
+                    <img src="{{item.image}}" alt="{{item.name}}-icon">
                     <span>{{item.name}}</span>
                 </div>
             }
         </div>
-        <div>
+        <div id="learning">
             <span>I am currently learning</span>
             <div>
-                <img src="" alt="">
-                <img src="" alt="">
+                <img src="assets/images/my-skills/currently-learning/react.png" alt="">
+                <img src="assets/images/my-skills/currently-learning/vue-js.png" alt="">
             </div>
             <p>Show that you are motivated to contually improve your skills, implement innovative solutions and stay abreast of new technologies.</p>
         </div>
