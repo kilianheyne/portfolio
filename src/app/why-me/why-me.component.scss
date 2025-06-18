@@ -1,12 +1,8 @@
+@import '../../styles.scss';
+
 section {
     color: white;
     padding: 0 160px 0 160px;
-}
-
-h3 {
-    margin: 56px;
-    text-align: center;
-    font-size: 32px;
 }
 
 #about-me {
@@ -24,8 +20,7 @@ h3 {
         width: 50%;
 
         #lets-talk-btn {
-            display: flex;
-            justify-content: end;
+            @include dFlex($jc: end);
         }
     }
 }
