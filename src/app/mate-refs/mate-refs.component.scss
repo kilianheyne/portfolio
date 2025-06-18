@@ -1,0 +1,14 @@
+@import '../../styles.scss';
+
+section {
+    padding: 0 80px 0 80px;
+}
+
+#ref-contaier {
+    @include dFlex();
+
+    .ref-comment {
+        width: 33%;
+        @include dFlex($fd: column);
+    }
+}
