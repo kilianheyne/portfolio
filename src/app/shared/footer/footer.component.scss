@@ -30,7 +30,15 @@ footer {
         color: $dark-grey;
         font-family: 'Josefin Sans';
         font-size: 18px;
+        cursor: default;
     }
+    >span:first-of-type{
+        &:hover {
+            color: $creme-white;
+            cursor: pointer;
+        }
+    }
+
 }
 
 #logo {
