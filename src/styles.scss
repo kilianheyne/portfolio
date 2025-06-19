@@ -1,10 +1,11 @@
 // #region colorpalette
 
 $dark-blue: #23282e;
-$light-blue: #88b3d1;
+$light-blue: #89BCD9;
 
-$chalk: #faf6ed;
+$creme-white: #F8F5EC;
 $grey: #bec0c2;
+$dark-grey: #262E34;
 
 $red: #e34b34;
 $green: #95e063;
@@ -53,7 +54,7 @@ $green: #95e063;
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-    color: $chalk;
+    color: $creme-white;
 }
 
 // #region mixins
@@ -112,25 +113,6 @@ h4 {
     top: 50%;
     transform: translate(0, -50%);
     z-index: -10;
-}
-
-.logo-comp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    > img {
-        object-fit: contain;
-    }
-
-    > p {
-        color: white;
-    }
-
-    > span {
-        color: #262d33;
-    }
 }
 
 body {

@@ -1,30 +1,57 @@
 @import '../../../styles.scss';
 
 footer {
-    height: 144px;
+    height: 214px;
     background: $light-blue;
-    padding: 0 80px 30px 80px;
-    @include dFlex($jc: space-between);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
     >div {
         height: 100%;
     }
 }
 
+#footer-content {
+    width: 100%;
+    height: 72px;
+    padding: 0 112px 0 112px;
+    @include dFlex($jc: space-between);
+}
+
 #legal-notice {
-    @include dFlex($jc: end, $ai: left, $fd: column);
-    
+    @include dFlex($jc: end, $ai: start, $fd: column);
+    opacity: 80%;
+    gap: 16px;
+    height: 100%;
 
     >span {
-        color: $dark-blue;
+        color: $dark-grey;
+        font-family: 'Josefin Sans';
+        font-size: 18px;
     }
 }
 
 #logo {
     @include dFlex($fd: column, $jc: end);
+
+    > p {
+        color: $creme-white;
+        font-size: 14px;
+        font-family: 'Anta';
+    }
+
+    > span {
+        color: $dark-grey;
+        font-size: 14px;
+        font-weight: 300;
+        font-family: 'Josefin Sans';
+    }
 }
 
 #some-icons {
     @include dFlex($ai: flex-end);
-    gap: 12px;
+    height: 100%;
+    gap: 16px;
 }
