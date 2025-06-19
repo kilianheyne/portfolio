@@ -31,6 +31,7 @@ section {
     #headband {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 50px; 
 
         #logo {
             @include dFlex($fd: column, $jc: end);

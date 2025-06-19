@@ -5,22 +5,30 @@
         <img src="assets/images/hero-section/image-backdrop-hover.png" alt="" class="hide absolute">
     </div>
     <div id="presi-container">
-        <div id="headband">
-            <div></div>
-            <div id="logo">
-                <img src="assets/images/hero-section/logo-icon.png" alt="logo-icon">
-                <span>K.Heyne</span>
-                <span>developer</span>
-            </div>
-            <div id="some">
-                <a href="" target="_blank"><img src="assets/images/contact-icons/e-mail.png" alt="e-mail-icon"></a>
-                <a href="" target="_blank"><img src="assets/images/contact-icons/github.png" alt="github-icon"></a>
-                <a href="" target="_blank"><img src="assets/images/contact-icons/linkedin.png" alt="linkedin-icon"></a>
-            </div>
-        </div>
         <div>
-            <h1>Kilian Heyne</h1>
-            <h2>FRONTEND DEVELOPER</h2>
+            <div id="headband">
+                <div></div>
+                <div id="logo">
+                    <img src="assets/images/hero-section/logo-icon.png" alt="logo-icon">
+                    <span>K.Heyne</span>
+                    <span>developer</span>
+                </div>
+                <div id="some">
+                    <a href="">
+                        <img [src]="githubIcon" alt="github-icon" (mouseenter)="changeIcon('github', true)" (mouseleave)="changeIcon('github', false)">
+                    </a>
+                    <a href="">
+                        <img [src]="eMailIcon" alt="e-mail-icon" (mouseenter)="changeIcon('e-mail', true)" (mouseleave)="changeIcon('e-mail', false)">
+                    </a>
+                    <a href="">
+                        <img [src]="linkedinIcon" alt="linkedin-icon" (mouseenter)="changeIcon('linkedin', true)" (mouseleave)="changeIcon('linkedin', false)">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h1>Kilian Heyne</h1>
+                <h2>FRONTEND DEVELOPER</h2>
+            </div>
         </div>
         <div id="arrow-down-btn">
             <img src="assets/images/hero-section/arrow-down.png" alt="">
