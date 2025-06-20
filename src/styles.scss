@@ -71,30 +71,29 @@ $green: #95e063;
 h1, h2, h3, h4 {
     text-align: center;
     font-family: 'Anta';
+    font-weight: 400;
 }
 
 h1 {
     font-size: 88px;
     margin-bottom: 16px;
-    font-weight: 400;
 }
 
 h2 {
     font-size: 40px;
     font-family: 'Josefin Sans';
-    font-weight: 400;
 }
 
 h3 {
     margin: 56px;
     font-size: 60px;
+    color: $light-blue;
 }
 
 h4 {
     margin: 56px;
     font-size: 32px;
     font-family: 'Josefin Sans';
-    font-weight: 400;
     color: $light-blue;
 }
 
