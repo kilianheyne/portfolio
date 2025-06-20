@@ -4,8 +4,7 @@ section {
     display: flex;
     height: 100dvh;
     color: white;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 0 114px 0 114px;
 
     img {
         object-fit: contain;
@@ -15,10 +14,32 @@ section {
 #image-container {
     display: flex;
     justify-content: center;
+    align-items: end;
     width: 40%;
+
 
     img {
         width: 100%;
+        z-index: 5;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url('../../../public/assets/images/hero-section/image-backdrop.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        transform: rotate(-45deg);
+        transition: background 100 ms ease-in-out;
+    }
+
+    &:hover::before {
+        background: url('../../../public/assets/images/hero-section/image-backdrop-hover.png') no-repeat;
+        background-size: contain;
+        background-position: center;
     }
 }
 
@@ -35,6 +56,7 @@ section {
 
         #logo {
             @include dFlex($fd: column, $jc: end);
+            cursor: default;
 
             >span:first-of-type {
                 font-size: 16px;
@@ -60,3 +82,4 @@ section {
         justify-content: center;
     }
 }
+
