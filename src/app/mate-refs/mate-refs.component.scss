@@ -1,14 +1,12 @@
 @import '../../styles.scss';
 
 section {
-    padding: 0 80px 0 80px;
-}
+    padding: 0 116px 0 116px;
+    width: 100%;
 
-#ref-contaier {
-    @include dFlex();
-
-    .ref-comment {
-        width: 33%;
-        @include dFlex($fd: column);
+    div {
+        width: 100%;
+        display: flex;
+        gap: 14px;
     }
 }

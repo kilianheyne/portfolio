@@ -10,6 +10,7 @@ section {
     top: 0;
     z-index: 10;
     background: #89bbd9;
+    
 }
 
 .logo-comp {
@@ -47,6 +48,11 @@ section {
         font-family: 'Josefin Sans';
         font-weight: 500;
         font-size: 26px;
+
+        &:hover {
+            color: $creme-white;
+            cursor: pointer;
+        }
     }
 }
 
@@ -55,4 +61,19 @@ section {
     gap: 22px;
     font-family: 'Josefin Sans';
     font-size: 18px;
+
+    >span {
+        color: $dark-grey;
+
+        &:hover {
+            color: $creme-white;
+            cursor: pointer;
+        }
+
+        &:active {
+            background: url('../../../../public/assets/images/header/active-language.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
 }

@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { SkilldataService } from '../skilldata.service';
+import { SkilldataService } from '../shared/services/skilldata.service';
 import { SkillComponent } from "./skill/skill.component";
 
 @Component({
