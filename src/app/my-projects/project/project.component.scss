@@ -1,0 +1,47 @@
+@import '../../../styles.scss';
+
+section {
+    display: flex;
+}
+
+#project-details {
+    width: 50%;
+
+    .bullet-point {
+        display: flex;
+        gap: 18px;
+    }
+
+    .bullet-point-heading {
+        margin-bottom: 32px;
+
+        >div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+
+            >p {
+                font-family: 'Josefin Sans';
+                font-size: 28px;
+            }
+            >span {
+                font-family: 'Josefin Sans';
+                font-size: 18px;
+            }
+        }
+        >p {
+            font-family: 'Josefin Sans';
+            font-size: 18px;
+        }
+    }
+}
+
+#project-visuals {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}

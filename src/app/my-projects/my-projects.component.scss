@@ -1,0 +1,45 @@
+@import '../../styles.scss';
+
+section {
+    
+}
+
+#nav-bar {
+    display: flex;
+    height: 97px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 102px 0 102px;
+
+    >div {
+        font-size: 30px;
+        font-family: 'Josefin Sans';
+        font-weight: 500;
+        color: $light-blue;
+
+        &:hover {
+            color: $creme-white;
+            cursor: pointer;
+        }
+
+        &:active {
+            background: #2f3940;
+        }
+    }
+}
+
+#project-overview {
+    width: 100%;
+    background: #2f3940;
+    padding: 30px 102px 30px 102px;
+}
+
+#project-details {
+    width: 50%;
+
+    .bullet-point {
+        display: flex;
+    }
+}
+
