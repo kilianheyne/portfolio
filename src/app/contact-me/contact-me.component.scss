@@ -1,0 +1,49 @@
+@import '../../styles.scss';
+
+section {
+    padding: 0 265px 0 265px;
+}
+
+#contact-infos {
+    display: flex;
+    width: 100%;
+    gap: 36px;
+
+    >p {
+        width: 50%;
+        font-family: 'Josefin Sans';
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    >div {
+        width: 50%;
+        >div {
+            display: flex;
+            align-items: center;
+            >span {
+                font-size: 20px;
+                font-family: 'Josefin Sans';
+
+                &:hover {
+                    color: $light-blue;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+form {
+    >div {
+        >div {
+            display: flex;
+        }
+    }
+}
+
+#btn {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
