@@ -2,6 +2,7 @@
 
 section {
     padding: 0 265px 0 265px;
+    margin-bottom: 120px;
 }
 
 #contact-infos {
@@ -35,10 +36,45 @@ section {
 }
 
 form {
+    margin-top: 48px;
+
+    label {
+        font-size: 14px;
+        color: $light-blue;
+        font-family: 'Josefin Sans';
+    }
+
+    #upper-form {
+        gap: 20px;
+        margin-bottom: 16px;
+    }
+
     >div {
+        display: flex;
+        justify-content: space-between;
+
         >div {
             display: flex;
+            flex-direction: column;
+            width: 50%;
         }
+    }
+
+    #your-msg {
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+
+        input {
+            min-height: 150px;
+            margin-bottom: 16px;
+        }
+    }
+
+    #agreement {
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: start;
     }
 }
 
