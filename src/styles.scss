@@ -103,9 +103,14 @@ h4 {
     object-fit: contain;
 }
 
-.content-limit {
-    width: 100%;
-    max-width: 1920px;
+section, header, footer {
+    display: flex;
+    justify-content: center;
+
+    .content-limit {
+        width: 100%;
+        max-width: 1920px;
+    }
 }
 
 .hide {
@@ -134,6 +139,29 @@ body {
     border: solid 1px $light-blue;
     font-size: 18px;
     font-family: 'Josefin Sans';
+
+    &:hover{
+        animation-name: buttonHover;
+        animation-duration: 125ms;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+
+// #endregion
+
+
+// #region keyframes 
+
+@keyframes changeBackground {
+    0% { background: url('../public/assets/images/hero-section/image-backdrop.png'); }
+    100% { background: url('../public/assets/images/hero-section/image-backdrop-hover.png'); }
+}
+
+@keyframes buttonHover {
+    0% { background: $dark-blue; }
+    100% { background: $light-blue; opacity: 0.2; }
 }
 
 // #endregion

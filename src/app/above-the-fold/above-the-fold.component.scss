@@ -1,85 +1,109 @@
 @import '../../styles.scss';
 
 section {
-    display: flex;
     height: 100dvh;
     color: white;
-    padding: 0 114px 0 114px;
+    padding: 41px 114px 0 114px;
 
     img {
         object-fit: contain;
     }
 }
 
-#image-container {
+#content-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: end;
-    width: 40%;
 
-
-    img {
-        width: 100%;
-        z-index: 5;
-    }
-
-    &::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: url('../../../public/assets/images/hero-section/image-backdrop.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        transform: rotate(-45deg);
-        transition: background 100 ms ease-in-out;
-    }
-
-    &:hover::before {
-        background: url('../../../public/assets/images/hero-section/image-backdrop-hover.png') no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
-}
-
-#presi-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 60%;
-
-    #headband {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 50px; 
-
-        #logo {
-            @include dFlex($fd: column, $jc: end);
-            cursor: default;
-
-            >span:first-of-type {
-                font-size: 16px;
-                font-family: 'Anta';
-            }
-            >span:nth-of-type(2) {
-                font-size: 16px;
-                font-family: 'Josefin Sans';
-                font-weight: 300;
-                color: #89BCD9;
-            }
-        }
-
-        #some {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-    }
-
-    #arrow-down-btn {
+    #image-container {
         display: flex;
         justify-content: center;
+        align-items: end;
+        width: 40%;
+    
+    
+        img {
+            width: 100%;
+            z-index: 5;
+        }
+    
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('../../../public/assets/images/hero-section/image-backdrop.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            transform: rotate(-45deg);
+        }
+    
+        &:hover::before {
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+
+            animation-name: changeBackground;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    #presi-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 60%;
+    
+        #headband {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px; 
+    
+            #logo {
+                @include dFlex($fd: column, $jc: end);
+                cursor: default;
+    
+                >span:first-of-type {
+                    font-size: 16px;
+                    font-family: 'Anta';
+                }
+                >span:nth-of-type(2) {
+                    font-size: 16px;
+                    font-family: 'Josefin Sans';
+                    font-weight: 300;
+                    color: #89BCD9;
+                }
+            }
+    
+            #some {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+        }
+    
+        #arrow-down-btn {
+            display: flex;
+            justify-content: center;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                
+            }
+
+            .btn-style {
+                padding: 35px 15px 35px 15px;
+                height: 90px;
+                width: 40px;
+
+                
+            }
+        }
     }
 }
+
+
 

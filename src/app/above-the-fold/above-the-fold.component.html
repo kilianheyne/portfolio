@@ -1,37 +1,64 @@
-<section class="content-limit">
-    <div id="image-container">
-        <img src="assets/images/hero-section/kilian-portrait.png" alt="" id="portrait">
-    </div>
-    <div id="presi-container">
-        <div>
-            <div id="headband">
-                <div></div>
-                <div id="logo">
-                    <img src="assets/images/hero-section/logo-icon.png" alt="logo-icon">
-                    <span>K.Heyne</span>
-                    <span>developer</span>
-                </div>
-                <div id="some">
-                    <a href="">
-                        <img [src]="githubIcon" alt="github-icon" (mouseenter)="changeIcon('github', true)" (mouseleave)="changeIcon('github', false)">
-                    </a>
-                    <a href="">
-                        <img [src]="eMailIcon" alt="e-mail-icon" (mouseenter)="changeIcon('e-mail', true)" (mouseleave)="changeIcon('e-mail', false)">
-                    </a>
-                    <a href="">
-                        <img [src]="linkedinIcon" alt="linkedin-icon" (mouseenter)="changeIcon('linkedin', true)" (mouseleave)="changeIcon('linkedin', false)">
-                    </a>
-                </div>
-            </div>
-            <div>
-                <h1>Kilian Heyne</h1>
-                <h2>FRONTEND DEVELOPER</h2>
-            </div>
+<section>
+    <div id ="content-wrapper" class="content-limit">
+        <div id="image-container">
+            <img
+                src="assets/images/hero-section/kilian-portrait.png"
+                alt="portrait"
+                id="portrait"
+            />
         </div>
-        <div id="arrow-down-btn">
-            <a href="#why-me">
-                <img src="assets/images/hero-section/arrow-down.png" alt="">
-            </a>
+        <div id="presi-container">
+            <div>
+                <div id="headband">
+                    <div></div>
+                    <div id="logo">
+                        <img
+                            src="assets/images/hero-section/logo-icon.png"
+                            alt="logo-icon"
+                        />
+                        <span>K.Heyne</span>
+                        <span>developer</span>
+                    </div>
+                    <div id="some">
+                        <a href="">
+                            <img
+                                [src]="githubIcon"
+                                alt="github-icon"
+                                (mouseenter)="changeIcon('github', true)"
+                                (mouseleave)="changeIcon('github', false)"
+                            />
+                        </a>
+                        <a href="">
+                            <img
+                                [src]="eMailIcon"
+                                alt="e-mail-icon"
+                                (mouseenter)="changeIcon('e-mail', true)"
+                                (mouseleave)="changeIcon('e-mail', false)"
+                            />
+                        </a>
+                        <a href="">
+                            <img
+                                [src]="linkedinIcon"
+                                alt="linkedin-icon"
+                                (mouseenter)="changeIcon('linkedin', true)"
+                                (mouseleave)="changeIcon('linkedin', false)"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h1>Kilian Heyne</h1>
+                    <h2>FRONTEND DEVELOPER</h2>
+                </div>
+            </div>
+            <div id="arrow-down-btn">
+                <a href="#header" class="btn-style">
+                    <img
+                        src="assets/images/hero-section/arrow-down.png"
+                        alt="arrow-down"
+                    />
+                </a>
+            </div>
         </div>
     </div>
 </section>
