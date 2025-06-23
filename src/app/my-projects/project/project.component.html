@@ -49,7 +49,7 @@
             </div>
         </div>
         <div id="project-visuals">
-            <div>
+            <div id="tech">
                 <span>Technologies</span>
                 <div>
                     @for (item of project.technologies; track $index) {
@@ -58,10 +58,8 @@
                 </div>
             </div>
             <img src="{{ project.screenshot }}" alt="{{ project.name }}" />
-            <div>
-                <a href="{{ project.liveTestUrl }}" class="btn-style"
-                    >Live Test</a
-                >
+            <div id="live-test">
+                <a href="{{ project.liveTestUrl }}" class="btn-style">Live Test</a>
                 <a href="{{ project.gitHubUrl }}" class="btn-style">GitHub</a>
             </div>
         </div>
