@@ -10,7 +10,8 @@ header {
 }
 
 #content-wrapper {
-    background: #89bbd9;
+    background: $light-blue;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
