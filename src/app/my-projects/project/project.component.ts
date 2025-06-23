@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
-import { BulletPointComponent } from "./bullet-point/bullet-point.component";
+import { Component, inject, Input } from '@angular/core';
+import { ProjectsService } from '../../shared/services/projects.service';
+import { Project } from '../../shared/interfaces/project';
 
 @Component({
   selector: 'app-project',
-  imports: [BulletPointComponent],
+  imports: [],
   templateUrl: './project.component.html',
   styleUrl: './project.component.scss'
 })
 export class ProjectComponent {
 
+  projectListData = inject(ProjectsService);
+  @Input() project!: Project;
 }

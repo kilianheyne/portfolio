@@ -1,64 +1,70 @@
 <section>
-    <div id="project-details">
-        <div class="bullet-point">
-            <div>
-                <img src="assets/images/my-projects/project-details-bulletpoint.png" alt="">
-            </div>
-            <div class="bullet-point-heading">
+    <div id="content-wrapper" class="content-limit">
+        @if (project) {
+        <div id="project-details">
+            <div class="bullet-point">
                 <div>
-                    <p>About the project</p>
-                    <span>Duration: 3 weeks</span>
+                    <img
+                        src="assets/images/my-projects/project-details-bulletpoint.png"
+                        alt="bullet-point"
+                    />
                 </div>
-                <p>
-                    This App is a Slack Clone App. <br>
-                    It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.
-                </p>
+                <div class="bullet-point-heading">
+                    <div>
+                        <p>About the project</p>
+                        <span>Duration: {{ project.duration }} weeks</span>
+                    </div>
+                    <p>{{ project.aboutThisProject }}</p>
+                </div>
             </div>
-        </div>
-        <div class="bullet-point">
-            <div>
-                <img src="assets/images/my-projects/project-details-bulletpoint.png" alt="">
-            </div>
-            <div class="bullet-point-heading">
+            <div class="bullet-point">
                 <div>
-                    <p>How I have organised my work process</p>
-                    <span></span>
+                    <img
+                        src="assets/images/my-projects/project-details-bulletpoint.png"
+                        alt=""
+                    />
                 </div>
-                <p>
-                    How do you keep your code clean and maintainable? Have you broken the project down into reusable modules or components? Focus on documentation, naming files, variables, classes and testing.
-                </p>
+                <div class="bullet-point-heading">
+                    <div>
+                        <p>How I have organised my work process</p>
+                        <span></span>
+                    </div>
+                    <p>{{ project.howIOrganised }}</p>
+                </div>
             </div>
-        </div>
-        <div class="bullet-point">
-            <div>
-                <img src="assets/images/my-projects/project-details-bulletpoint.png" alt="">
-            </div>
-            <div class="bullet-point-heading">
+            <div class="bullet-point">
                 <div>
-                    <p>My group work experience</p>
-                    <span></span>
+                    <img
+                        src="assets/images/my-projects/project-details-bulletpoint.png"
+                        alt=""
+                    />
                 </div>
-                <p>
-                    How many people were in the team and what was your role? Describe your tasks in 1-2 sentences, for example: login form, dashboard or chat functionality.
-                    What technologies did you use?
-                    It is nice to mention good teamwork and cooperation.
-                </p>
+                <div class="bullet-point-heading">
+                    <div>
+                        <p>My group work experience</p>
+                        <span></span>
+                    </div>
+                    <p>{{ project.whatHaveILearnt }}</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="project-visuals">
-        <div>
-            <span>Technologies</span>
+        <div id="project-visuals">
             <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <span>Technologies</span>
+                <div>
+                    @for (item of project.technologies; track $index) {
+                    <img src="{{ item }}" alt="" />
+                    }
+                </div>
+            </div>
+            <img src="{{ project.screenshot }}" alt="{{ project.name }}" />
+            <div>
+                <a href="{{ project.liveTestUrl }}" class="btn-style"
+                    >Live Test</a
+                >
+                <a href="{{ project.gitHubUrl }}" class="btn-style">GitHub</a>
             </div>
         </div>
-        <img src="" alt="">
-        <div>
-            <a href="" class="btn-style">Live Test</a>
-            <a href="" class="btn-style">GitHub</a>
-        </div>
+        }
     </div>
 </section>

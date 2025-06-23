@@ -1,18 +1,14 @@
 @import '../../styles.scss';
 
-section {
-    
-}
-
 #nav-bar {
     display: flex;
     height: 97px;
     width: 100%;
-    justify-content: space-around;
     align-items: center;
     padding: 0 102px 0 102px;
 
     >div {
+        padding: 30px;
         font-size: 30px;
         font-family: 'Josefin Sans';
         font-weight: 500;

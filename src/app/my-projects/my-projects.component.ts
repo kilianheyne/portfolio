@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ProjectComponent } from "./project/project.component";
+import { ProjectsService } from '../shared/services/projects.service';
 
 @Component({
   selector: 'app-my-projects',
@@ -9,4 +10,7 @@ import { ProjectComponent } from "./project/project.component";
 })
 export class MyProjectsComponent {
 
+  projectListData = inject(ProjectsService);
+
+  selectedProjectIndex: number = 0;
 }

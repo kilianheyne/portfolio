@@ -1,12 +1,15 @@
 <section>
-    <h3>My Projects</h3>
-    <div id="nav-bar">
-        <div>1. El Pollo Loco</div>
-        <div>2. Pokédex</div>
-        <div>3. Join</div>
-        <div>4. Ongoing Project</div>
-    </div>
-    <div id="project-overview">
-        <app-project></app-project>
+    <div id="content-wrapper" class="content-limit">
+        <h3>My Projects</h3>
+        <div id="nav-bar">
+            @for (item of projectListData.projectList; track $index) {
+                <div (click)="selectedProjectIndex = $index">{{ $index+1 }}. {{ item.name }}</div>
+            }
+        </div>
+        <div id="project-overview">
+            @if (selectedProjectIndex !== null) {
+                <app-project [project]="projectListData.projectList[selectedProjectIndex]"></app-project>
+            }
+        </div>
     </div>
 </section>
