@@ -1,8 +1,10 @@
 <section class="content-limit">
-    <h4>Need a teamplayer? Here is what my colleagues said about me</h4>
-    <div>
-        @for (item of credentialData.credentialList; track $index) {
-        <app-credential [credential]="item"></app-credential>
-        }   
+    <div id="content-wrapper" class="content-limit">
+        <h4>Need a teamplayer? Here is what my colleagues said about me</h4>
+        <div>
+            @for (item of credentialData.credentialList; track $index) {
+            <app-credential [credential]="item"></app-credential>
+            }   
+        </div>
     </div>
 </section>

@@ -1,8 +1,11 @@
 @import '../../styles.scss';
 
 section {
-    padding: 0 265px 0 265px;
     margin-bottom: 120px;
+}
+
+#content-wrapper {
+    padding: 0 265px 0 265px;
 }
 
 #contact-infos {
@@ -22,6 +25,8 @@ section {
         >div {
             display: flex;
             align-items: center;
+            gap: 16px;
+
             >span {
                 font-size: 20px;
                 font-family: 'Josefin Sans';
@@ -42,6 +47,7 @@ form {
         font-size: 14px;
         color: $light-blue;
         font-family: 'Josefin Sans';
+        padding-left: 27px;
     }
 
     #upper-form {
@@ -75,6 +81,18 @@ form {
         margin-bottom: 16px;
         display: flex;
         justify-content: start;
+        align-items: center;
+        gap: 5px;
+
+        >span {
+            font-family: 'Josefin Sans';
+            font-weight: 400;
+            font-size: 14px;
+
+            a {
+                color: $light-blue;
+            }
+        }
     }
 }
 
