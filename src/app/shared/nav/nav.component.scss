@@ -1,16 +1,19 @@
 @import '../../../styles.scss';
 
-section {
-    display: flex;
-    justify-content: space-between;
+header {
     align-items: center;
     padding: 0 80px 0 80px;
     height: 104px;
     position: sticky;
     top: 0;
     z-index: 10;
+}
+
+#content-wrapper {
     background: #89bbd9;
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .logo-comp {
