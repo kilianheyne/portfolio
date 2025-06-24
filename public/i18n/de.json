@@ -4,5 +4,20 @@
         "nav_a_2": "Kompetenzen",
         "nav_a_3": "Referenzen",
         "nav_a_4": "Schreib mir"
-    }
+    },
+    "why-me": {
+        "h3": "Darum ich",
+        "location_span_1": "Ich wohne",
+        "location_span_2": "in Berlin...|",
+        "work_span_1": "Arbeiten von überall?",
+        "work_span_2": "Klar! |",
+        "relocate_span_1": "Standortwechsel?",
+        "relocate_span_2": "Ich bin flexibel! |",
+        "passion_about": "Programmieren ist meine Überraschung des Jahres. Die Kombination aus Logik und Kreativität, täglich neue Herausforderungen komplexer Probleme und neues Wissen halten mich motiviert."
+    },
+    "my-skills": {
+        "h3": "Meine Kompetenzen",
+        "learning_span": "Aktuell lerne ich: ",
+        "learning_p": "Neue Technologien entdecken, meine Fähigkeiten weiterentwickeln und Ideen in noch einfächere Lösungen zu verpacken - das ist, was mich als Entwickler täglich antreibt."
+    },
 }

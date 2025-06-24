@@ -1,6 +1,6 @@
 <section>
     <div id="content-wrapper" class="content-limit">
-        <h3>My Skills</h3>
+        <h3>{{ 'my-skills.h3' | translate }}</h3>
         <div id="my-skills">
             <div id="skill-overview">
                 @for (item of skillListData.skillList; track $index) {
@@ -11,7 +11,7 @@
                 }
             </div>
             <div id="learning">
-                <span>I am currently learning</span>
+                <span>{{ 'my-skills.learning_span' | translate }}</span>
                 <div id="current-learnings">
                     <div class="flexCo">
                         <img
@@ -28,11 +28,7 @@
                         <span>Vue Js</span>
                     </div>
                 </div>
-                <p>
-                    Show that you are motivated to contually improve your skills,
-                    implement innovative solutions and stay abreast of new
-                    technologies.
-                </p>
+                <p>{{ 'my-skills.learning_p' | translate }}</p>
             </div>
         </div>
     </div>
