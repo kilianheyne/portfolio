@@ -7,15 +7,15 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#why-me">Why me</a></li>
-                <li><a href="#my-skills">Skills</a></li>
-                <li><a href="#my-projects">Projects</a></li>
-                <li><a href="#contact-me">Contact</a></li>
+                <li><a href="#why-me">{{ 'header.nav_a_1' | translate }}</a></li>
+                <li><a href="#my-skills">{{ 'header.nav_a_2' | translate }}</a></li>
+                <li><a href="#my-projects">{{ 'header.nav_a_3' | translate }}</a></li>
+                <li><a href="#contact-me">{{ 'header.nav_a_4' | translate }}</a></li>
             </ul>
         </nav>
         <div id="lingo-switch">
-            <span>DE</span>
-            <span>EN</span>
+            <button (click)="changeLanguage('de')">DE</button>
+            <button (click)="changeLanguage('en')">EN</button>
         </div>
     </div>
 </header>

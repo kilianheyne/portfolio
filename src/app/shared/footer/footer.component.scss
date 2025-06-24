@@ -1,14 +1,18 @@
 @import '../../../styles.scss';
 
 footer {
-    height: 214px;
-    background: $light-blue;
-    align-items: center;
-    
+    height: 214px;    
 
     >div {
         height: 100%;
     }
+}
+
+#content-wrapper {
+    background: $light-blue;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 #footer-content {
