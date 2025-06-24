@@ -1,7 +1,7 @@
 // #region colorpalette
 
 $dark-blue: #23282e;
-$light-blue: #89BCD9;
+$light-blue: #89bcd9;
 
 $creme-white: #F8F5EC;
 $grey: #bec0c2;
@@ -163,7 +163,7 @@ body {
 
 @keyframes buttonHover {
     0% { background: $dark-blue; }
-    100% { background: $light-blue; opacity: 0.2; }
+    100% { background: $light-blue; }
 }
 
 // #endregion
