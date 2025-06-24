@@ -34,7 +34,11 @@
                 </div>
                 <div>
                     @if(!email.valid && email.touched){
-                        <label class="error-msg" for="email">Your Email is required</label>
+                        @if (email.errors?.['required']) {
+                            <label class="error-msg" for="email">Your Email is required</label>
+                        } @else if (email.errors?.['pattern']) {
+                            <label class="error-msg" for="email">Please enter a valid email address</label>
+                        }
                     } @else {
                         <label for="email">Your Email</label>
                     }
@@ -43,7 +47,11 @@
             </div>
             <div id="your-msg">
                 @if(!message.valid && message.touched){
-                    <label class="error-msg">Your message is required</label>
+                    @if (message.errors?.['required']) {
+                        <label class="error-msg">Your message is required</label>
+                    } @else if (message.errors?.['minlength']) {
+                        <label class="error-msg">Your message must be at least {{message.errors?.['minlength'].requiredLength}} characters (you have {{ message.errors?.['minlength'].actualLength }})</label>
+                    }
                 } @else {
                     <label>Your message</label>
                 }
