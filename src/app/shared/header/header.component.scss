@@ -41,27 +41,35 @@ header {
     }
 }
 
-#nav {
+nav {
     width: 60%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-    a {
-        color: $dark-grey;
-        font-family: 'Josefin Sans';
-        font-weight: 500;
-        font-size: 26px;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
 
-        &:hover {
-            color: $creme-white;
-            cursor: pointer;
-        }
-        &:focus{
-            color: $creme-white;
-            background: url(../../../../public/assets/images/header/header-focus.png);
+        a {
+            color: $dark-grey;
+            font-family: 'Josefin Sans';
+            font-weight: 500;
+            font-size: 26px;
+    
+            &:hover {
+                color: $creme-white;
+                cursor: pointer;
+            }
+            &:focus{
+                color: $creme-white;
+                background: url(../../../../public/assets/images/header/header-focus.png);
+            }
         }
     }
+
+    
 }
 
 #lingo-switch {

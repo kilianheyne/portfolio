@@ -22,7 +22,7 @@
                 </div>
             </div>
         </div>
-        <form (ngSubmit)="onSubmit()">
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <div id="upper-form">
                 <div>
                     @if(!name.valid && name.touched){
