@@ -25,23 +25,36 @@
         <form (ngSubmit)="onSubmit()">
             <div id="upper-form">
                 <div>
-                    <label for="name">Your name</label>
-                    <input [(ngModel)]="contactData.name" type="text" name="name" id="name" class="btn-style" />
+                    @if(!name.valid && name.touched){
+                        <label class="error-msg" for="name">Your name is required</label>
+                    } @else {
+                        <label for="name">Your name</label>
+                    }
+                    <input #name="ngModel" [(ngModel)]="contactData.name" [ngClass]="{'error-border' : !name.valid && name.touched}" type="text" name="name" id="name" class="btn-style" required/>
                 </div>
                 <div>
-                    <label for="email">Your Email</label>
-                    <input [(ngModel)]="contactData.email" type="email" name="email" id="email" class="btn-style" />
+                    @if(!email.valid && email.touched){
+                        <label class="error-msg" for="email">Your Email is required</label>
+                    } @else {
+                        <label for="email">Your Email</label>
+                    }
+                    <input #email="ngModel" [(ngModel)]="contactData.email" [ngClass]="{'error-border' : !email.valid && email.touched}" type="email" name="email" id="email" class="btn-style" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"/>
                 </div>
             </div>
             <div id="your-msg">
-                <label for="">Your message</label>
-                <textarea [(ngModel)]="contactData.message" minlength="9" name="message" id="message" class="btn-style"></textarea>
+                @if(!message.valid && message.touched){
+                    <label class="error-msg">Your message is required</label>
+                } @else {
+                    <label>Your message</label>
+                }
+                <textarea #message="ngModel" [(ngModel)]="contactData.message" [ngClass]="{'error-border' : !message.valid && message.touched}" minlength="9" name="message" id="message" class="btn-style" required></textarea>
             </div>
             <div id="agreement">
-                <img
+                <!-- <img
                     src="assets/images/contact-me/privacy-policy/unchecked.png"
                     alt=""
-                />
+                /> -->
+                <input type="checkbox" required>
                 <span
                     >I've read the
                     <a href="">privacy policy </a>
