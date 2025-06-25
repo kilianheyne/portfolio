@@ -52,6 +52,13 @@ nav {
         justify-content: space-between;
         width: 100%;
 
+        li:focus {
+            background: url(../../../../public/assets/images/header/header-focus.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
         a {
             color: $dark-grey;
             font-family: 'Josefin Sans';
@@ -59,12 +66,13 @@ nav {
             font-size: 26px;
     
             &:hover {
-                color: $creme-white;
+                animation-name: fontColorHover;
+                animation-duration: 250ms;
+                animation-fill-mode: forwards;
                 cursor: pointer;
             }
             &:focus{
                 color: $creme-white;
-                background: url(../../../../public/assets/images/header/header-focus.png);
             }
         }
     }
@@ -75,22 +83,28 @@ nav {
 #lingo-switch {
     display: flex;
     gap: 22px;
-    font-family: 'Josefin Sans';
-    font-size: 18px;
-
     
 
-
-    >span {
+    button {
+        border: none;
         color: $dark-grey;
+        background: $light-blue;
+        font-family: 'Josefin Sans';
+        font-size: 18px;
+        min-height: 24px;
+        min-width: 38px;
 
         &:hover {
-            color: $creme-white;
+            animation-name: fontColorHover;
+            animation-duration: 250ms;
+            animation-fill-mode: forwards;
             cursor: pointer;
         }
         &:focus {
+            color: $creme-white;
             background: url('../../../../public/assets/images/header/active-language.png');
             background-size: contain;
+            background-position: center;
             background-repeat: no-repeat;
         }
     }

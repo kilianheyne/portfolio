@@ -15,6 +15,7 @@ export class ContactMeComponent {
     name: "",
     email: "",
     message: "",
+    privacyPolicy: "",
   }
 
   onSubmit(form: NgForm){

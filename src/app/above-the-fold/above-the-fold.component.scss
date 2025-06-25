@@ -17,7 +17,7 @@ section {
         display: flex;
         justify-content: center;
         align-items: end;
-        width: 40%;
+        width: 50%;
     
     
         img {
@@ -38,12 +38,8 @@ section {
         }
     
         &:hover::before {
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-
             animation-name: changeBackground;
-            animation-duration: 3s;
+            animation-duration: 800ms;
             animation-fill-mode: forwards;
         }
     }
@@ -52,7 +48,7 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        width: 60%;
+        flex-grow: 1;
     
         #headband {
             display: flex;
@@ -90,20 +86,13 @@ section {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
-                
             }
 
             .btn-style {
                 padding: 35px 15px 35px 15px;
                 height: 90px;
                 width: 40px;
-
-                
             }
         }
     }
 }
-
-
-

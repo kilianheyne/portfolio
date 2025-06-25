@@ -2,6 +2,7 @@
 
 $dark-blue: #23282e;
 $light-blue: #89bcd9;
+$hover-blue: #89bcd920;
 
 $creme-white: #F8F5EC;
 $grey: #bec0c2;
@@ -144,8 +145,9 @@ body {
     font-family: 'Josefin Sans';
 
     &:hover{
+        cursor: pointer;
         animation-name: buttonHover;
-        animation-duration: 125ms;
+        animation-duration: 500ms;
         animation-fill-mode: forwards;
     }
 }
@@ -158,13 +160,28 @@ body {
 // #region keyframes 
 
 @keyframes changeBackground {
-    0% { background: url('../public/assets/images/hero-section/image-backdrop.png'); }
-    100% { background: url('../public/assets/images/hero-section/image-backdrop-hover.png'); }
+    0% { 
+        background: url('../public/assets/images/hero-section/image-backdrop.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center; 
+    }
+    100% { 
+        background: url('../public/assets/images/hero-section/image-backdrop-hover.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
 }
 
 @keyframes buttonHover {
     0% { background: $dark-blue; }
-    100% { background: $light-blue; }
+    100% { background: $hover-blue; }
+}
+
+@keyframes fontColorHover {
+    0% { color: $dark-grey; }
+    100% { color: $creme-white; }
 }
 
 // #endregion
