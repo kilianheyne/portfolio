@@ -13,9 +13,22 @@
                 <li><a href="#contact-me">{{ 'header.nav_a_4' | translate }}</a></li>
             </ul>
         </nav>
+        <!-- button area to switch between languages -->
         <div id="lingo-switch">
-            <button (click)="changeLanguage('de')">DE</button>
-            <button (click)="changeLanguage('en')">EN</button>
+            <button 
+                [class.active]="activeLanguage === 'de' && hoveredLanguage !=='en'" 
+                (click)="changeLanguage('de')"
+                (mouseenter)="hoveredLanguage = 'de' "
+                (mouseleave)="hoveredLanguage= '' "
+                >DE
+            </button>
+            <button 
+                [class.active]="activeLanguage === 'en' && hoveredLanguage !=='de'" 
+                (click)="changeLanguage('en')"
+                (mouseenter)="hoveredLanguage = 'en' "
+                (mouseleave)="hoveredLanguage = '' "
+                >EN
+            </button>
         </div>
     </div>
 </header>

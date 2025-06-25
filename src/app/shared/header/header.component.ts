@@ -8,11 +8,23 @@ import { TranslatePipe, TranslateDirective, TranslateService } from "@ngx-transl
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  // #region attributes
 
-  constructor(private translate: TranslateService){}
+  activeLanguage: string = '';
+  hoveredLanguage: string = '';
 
-  changeLanguage(lingo: string){
-    this.translate.use(lingo);
+  // #endregion
+  // #region constructor
+
+  constructor(private translate: TranslateService){} //ngx-library for translation
+
+  // #endregion
+  // #region methods
+
+  changeLanguage(lingo: string){ //button in header have "lingo" 'de' or 'en'
+    this.translate.use(lingo); // chosing the needed json for translation in ngx-translate
+    this.activeLanguage = lingo; // caching language
   }
 
+  // #endregion
 }
