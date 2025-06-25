@@ -52,10 +52,12 @@ nav {
         justify-content: space-between;
         width: 100%;
 
-        li:active {
-            background: url(../../../../public/assets/images/header/header-focus.png);
-            background-repeat: no-repeat;
-            background-position: center;
+        li {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            min-width: 90px;
+            min-height: 60px;
         }
 
         a {
@@ -63,15 +65,26 @@ nav {
             font-family: 'Josefin Sans';
             font-weight: 500;
             font-size: 26px;
+            cursor: pointer;
+            
+            transition: background 0.5s ease, color 0.5s ease;
     
             &:hover {
                 animation-name: fontColorHover;
                 animation-duration: 250ms;
                 animation-fill-mode: forwards;
-                cursor: pointer;
             }
-            &:focus{
+            &.active {
                 color: $creme-white;
+                background: url(../../../../public/assets/images/header/header-focus.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                justify-content: center; 
+                align-items: center;
+                min-width: 90px;
+                min-height: 60px;
             }
         }
     }

@@ -13,6 +13,8 @@ export class HeaderComponent {
   activeLanguage: string = '';
   hoveredLanguage: string = '';
 
+  activeNav: string = '';
+
   // #endregion
   // #region constructor
 
@@ -24,6 +26,10 @@ export class HeaderComponent {
   changeLanguage(lingo: string){ //button in header have "lingo" 'de' or 'en'
     this.translate.use(lingo); // chosing the needed json for translation in ngx-translate
     this.activeLanguage = lingo; // caching language
+  }
+
+  setActiveNav (navTag: string){
+    this.activeNav = navTag; 
   }
 
   // #endregion
