@@ -67,5 +67,24 @@
     },
     "credential_3": {
         "comment": "She is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code."
+    },
+    "contact-me": {
+        "h3": "Contact me",
+        "contact": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work. Example: Feel free to get in touch with job offers or opportunities such as: ...",
+        "name": "Your name",
+        "error_name": "Your name is required",
+        "email": "Your Email",
+        "error_email": "Your Email is required",
+        "error_email_2": "Please enter a valid email address",
+        "msg": "Your message",
+        "error_msg": "Your message is required",
+        "error_msg_2": "Your message must be at least",
+        "error_msg_3": "characters",
+        "error_msg_4": "you have",
+        "policy": "I've read the",
+        "policy_2": "privacy policy",
+        "policy_3": "and agree to the processing of my data as outlined.",
+        "error_policy": "Please accept the privacy policy.",
+        "submit": "Send"
     }
 }

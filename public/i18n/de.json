@@ -67,5 +67,24 @@
     },
     "credential_3": {
         "comment": "Sie ist eine vertrauenswürdige Kollegin und kann auch stressige Situationen und enge Zeitpläne bewältigen. Sie vereint strukturiertes arbeiten mit eindeutigem Code."
+    },
+    "contact-me": {
+        "h3": "Kontakt",
+        "contact": "Ermutige Besucher Dich zu kontaktieren und beschreibe welche Jobs Dich interessieren. Zeige, dass Du durch Deine Arbeit einen Mehrwert bieten kannst. Beispiel: Ich lade Sie ein über mögliche Jobabgenobte zu sprechen, wie beispielsweise: ...",
+        "name": "Dein Name",
+        "error_name": "Dein Name wird benötigt",
+        "email": "Deine E-Mail",
+        "error_email": "Deine E-Mail wird benötigt",
+        "error_email_2": "Bitte trage eine gültige E-Mail ein",
+        "msg": "Deine Nachricht",
+        "error_msg": "Deine Nachricht wird benötigt",
+        "error_msg_2": "Deine Nachricht muss mindestens",
+        "error_msg_3": "Zeichen lang sein",
+        "error_msg_4": "Du hast",
+        "policy": "Ich habe die",
+        "policy_2": "Datenschutzrichtlinien",
+        "policy_3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+        "error_policy": "Bitte akzeptiere die Datenschutzrichtlinien.",
+        "submit": "Senden"
     }
 }

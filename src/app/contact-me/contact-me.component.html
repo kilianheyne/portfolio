@@ -8,14 +8,9 @@
         </a>
     </div>
     <div id="content-wrapper" class="content-limit">
-        <h3>Contact me</h3>
+        <h3>{{ 'contact-me.h3' | translate }}</h3>
         <div id="contact-infos">
-            <p>
-                Encourage people to contact you and describe what role you are
-                interested in. Show that you will add value to their projects
-                through your work. Example: Feel free to get in touch with job
-                offers or opportunities such as: ...
-            </p>
+            <p>{{ 'contact-me.contact' | translate }}</p>
             <div>
                 <a href="">
                     <div id="e-mail-icon"></div>
@@ -31,21 +26,21 @@
             <div id="upper-form">
                 <div>
                     @if(!name.valid && name.touched){
-                        <label class="error-msg" for="name">Your name is required</label>
+                        <label class="error-msg" for="name">{{ 'contact-me.error_name' | translate }}</label>
                     } @else {
-                        <label for="name">Your name</label>
+                        <label for="name">{{ 'contact-me.name' | translate }}</label>
                     }
                     <input #name="ngModel" [(ngModel)]="contactData.name" [ngClass]="{'error-border' : !name.valid && name.touched}" type="text" name="name" id="name" class="btn-style" required/>
                 </div>
                 <div>
                     @if(!email.valid && email.touched){
                         @if (email.errors?.['required']) {
-                            <label class="error-msg" for="email">Your Email is required</label>
+                            <label class="error-msg" for="email">{{ 'contact-me.error_email' | translate }}</label>
                         } @else if (email.errors?.['pattern']) {
-                            <label class="error-msg" for="email">Please enter a valid email address</label>
+                            <label class="error-msg" for="email">{{ 'contact-me.error_email_2' | translate }}</label>
                         }
                     } @else {
-                        <label for="email">Your Email</label>
+                        <label for="email">{{ 'contact-me.email' | translate }}</label>
                     }
                     <input #email="ngModel" [(ngModel)]="contactData.email" [ngClass]="{'error-border' : !email.valid && email.touched}" type="email" name="email" id="email" class="btn-style" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"/>
                 </div>
@@ -53,12 +48,12 @@
             <div id="your-msg">
                 @if(!message.valid && message.touched){
                     @if (message.errors?.['required']) {
-                        <label class="error-msg">Your message is required</label>
+                        <label class="error-msg">{{ 'contact-me.error_msg' | translate }}</label>
                     } @else if (message.errors?.['minlength']) {
-                        <label class="error-msg">Your message must be at least {{message.errors?.['minlength'].requiredLength}} characters (you have {{ message.errors?.['minlength'].actualLength }})</label>
+                        <label class="error-msg">{{ 'contact-me.error_msg_2' | translate }} {{message.errors?.['minlength'].requiredLength}} {{ 'contact-me.error_msg_3' | translate }} ({{ 'contact-me.error_msg_4' | translate }} {{ message.errors?.['minlength'].actualLength }})</label>
                     }
                 } @else {
-                    <label>Your message</label>
+                    <label>{{ 'contact-me.msg' | translate }}</label>
                 }
                 <textarea #message="ngModel" [(ngModel)]="contactData.message" [ngClass]="{'error-border' : !message.valid && message.touched}" minlength="9" name="message" id="message" class="btn-style" required></textarea>
             </div>
@@ -74,18 +69,18 @@
                 <label for="privacy-policy" class="custom-checkbox"></label>
                 <div id="span-container">
                     <span
-                        >I've read the
-                        <a href="">privacy policy </a>
-                        and agree to the processing of my data as outlined.
+                        >{{ 'contact-me.policy' | translate }}
+                        <a href="">{{ 'contact-me.policy_2' | translate }}</a>
+                        {{ 'contact-me.policy_3' | translate }}
                     </span>
                     @if (privacyPolicy.touched && privacyPolicy.errors?.['required']) {
-                        <span class="error-msg">Please accept the privacy policy.</span>
+                        <span class="error-msg">{{ 'contact-me.error_policy' | translate }}</span>
                     }
                 </div>
                 
             </div>
             <div id="btn">
-                <input type="submit" value="Send" class="btn-style" [disabled]="!contactForm.valid">
+                <input type="submit" value="{{ 'contact-me.submit' | translate }}" class="btn-style" [disabled]="!contactForm.valid">
             </div>
         </form>
     </div>
