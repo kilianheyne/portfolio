@@ -28,13 +28,13 @@ footer {
     gap: 16px;
     height: 100%;
 
-    >span {
+    >span, a {
         color: $dark-grey;
         font-family: 'Josefin Sans';
         font-size: 18px;
         cursor: default;
     }
-    >span:first-of-type{
+    >a{
         &:hover {
             color: $creme-white;
             cursor: pointer;

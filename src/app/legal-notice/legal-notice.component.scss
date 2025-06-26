@@ -1,0 +1,31 @@
+@import '../../styles.scss';
+
+section {
+    width: 100%;
+    height: calc(100dvh - 104px - 214px);
+}
+
+#content-wrapper {
+    padding: 0 265px 0 265px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    h2 {
+        margin: 26px;
+        margin-top: 104px;
+        font-family: 'Anta';
+        color: $light-blue;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    div, span {
+        font-size: 18px;
+        font-family: 'Josefin Sans';
+        gap: 6px;
+    }
+}

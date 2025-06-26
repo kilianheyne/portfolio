@@ -86,5 +86,16 @@
         "policy_3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
         "error_policy": "Bitte akzeptiere die Datenschutzrichtlinien.",
         "submit": "Senden"
+    },
+    "footer": {
+        "legal": "Impressum"
+    },
+    "legal-notice": {
+        "h2": "Impressum",
+        "span": "Angaben gemäß § 5 DDG",
+        "land": "Deutschland",
+        "contact": "Kontakt:",
+        "telefon": "Telefon",
+        "email": "E-Mail"
     }
 }
