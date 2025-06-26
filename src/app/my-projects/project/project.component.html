@@ -11,10 +11,10 @@
                 </div>
                 <div class="bullet-point-heading">
                     <div>
-                        <p>About the project</p>
-                        <span>Duration: {{ project.duration }} weeks</span>
+                        <p>{{ 'projects.about' | translate }}</p>
+                        <span>{{ 'projects.duration' | translate }} {{ project.duration }} {{ 'projects.weeks' | translate }}</span>
                     </div>
-                    <p>{{ project.aboutThisProject }}</p>
+                    <p>{{ project.aboutThisProject | translate }}</p>
                 </div>
             </div>
             <div class="bullet-point">
@@ -26,10 +26,10 @@
                 </div>
                 <div class="bullet-point-heading">
                     <div>
-                        <p>How I have organised my work process</p>
+                        <p>{{ 'projects.organised' | translate }}</p>
                         <span></span>
                     </div>
-                    <p>{{ project.howIOrganised }}</p>
+                    <p>{{ project.howIOrganised | translate }}</p>
                 </div>
             </div>
             <div class="bullet-point">
@@ -39,18 +39,29 @@
                         alt=""
                     />
                 </div>
-                <div class="bullet-point-heading">
-                    <div>
-                        <p>My group work experience</p>
-                        <span></span>
+                @if (project.groupProject) {
+                    <div class="bullet-point-heading">
+                        <div>
+                            <p>{{ 'projects.group_experience' | translate }}</p>
+                            <span></span>
+                        </div>
+                        <p>{{ project.groupWorkExperience | translate }}</p>
                     </div>
-                    <p>{{ project.whatHaveILearnt }}</p>
-                </div>
+                }
+                @else if (!project.groupProject) {
+                    <div class="bullet-point-heading">
+                        <div>
+                            <p>{{ 'projects.learnt' | translate }}</p>
+                            <span></span>
+                        </div>
+                        <p>{{ project.whatHaveILearnt | translate }}</p>
+                    </div>
+                }
             </div>
         </div>
         <div id="project-visuals">
             <div id="tech">
-                <span>Technologies</span>
+                <span>{{ 'projects.tech' | translate }}</span>
                 <div>
                     @for (item of project.technologies; track $index) {
                     <img src="{{ item }}" alt="" />
@@ -59,7 +70,7 @@
             </div>
             <img src="{{ project.screenshot }}" alt="{{ project.name }}" />
             <div id="live-test">
-                <a href="{{ project.liveTestUrl }}" class="btn-style">Live Test</a>
+                <a href="{{ project.liveTestUrl }}" class="btn-style">{{ 'projects.live_test' | translate }}</a>
                 <a href="{{ project.gitHubUrl }}" class="btn-style">GitHub</a>
             </div>
         </div>

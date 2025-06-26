@@ -10,4 +10,5 @@ export interface Project {
     screenshot: string;
     liveTestUrl: string;
     gitHubUrl: string;
+    groupProject: boolean
 }

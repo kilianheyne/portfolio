@@ -3,7 +3,7 @@
         <h3>{{ 'my-projects.h3' | translate }}</h3>
         <div id="nav-bar">
             @for (item of projectListData.projectList; track $index) {
-                <div (click)="selectedProjectIndex = $index">{{ $index+1 }}. {{ item.name }}</div>
+                <div (click)="selectedProjectIndex = $index">{{ $index+1 }}. {{ item.name | translate }}</div>
             }
         </div>
         <div id="project-overview">

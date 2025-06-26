@@ -22,5 +22,34 @@
     },
     "my-projects": {
         "h3": "Referenzen"
+    },
+    "projects": {
+        "about": "Über das Projekt",
+        "duration": "Dauer:",
+        "weeks": "Wochen",
+        "organised": "So organisiere ich den Ablauf",
+        "group_experience": "Erfahrungen in Gruppenarbeit",
+        "learnt": "Das habe ich gelernt",
+        "tech": "Anwendungen",
+        "live_test": "Vorschau",
+        "ongoing": "Aktuelles Projekt"
+    },
+    "project_card_1": {
+        "aboutThisProject": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und -zusammenarbeit durch eine intuitive Benutzeroberfläche, Echtzeitnachrichten und eine leistungsstarke Kanalorganisation.",
+        "howIOrganised": "Wie hältst Du Deinen Code sauber und wartbar? Hast Du das Projekt in wiederverwendbare Module und Komponenten unterteilt? Konzentriere Dich auf die Dokumentation, Beschriftung, Variablen, Klassen und Tests.",
+        "groupWorkExperience": "Wie viele Leute waren in Deinem Team und welche Aufgaben hast Du übernommen? Beschreibe Deine Aufgaben in 1 - 2 Sätzen, wie beispielsweise: Login-Formular, Dashboard, oder Chat-Funktionen. Welche Technologien hast Du verwendet? Vergiss nicht gute Zusammenarbeit und Teamarbeit zu unterstreichen."
+    },
+    "project_card_2": {
+        "aboutThisProject": "Ein simples Jump-n-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf Sharkie, Münzen und Giftflaschen zu fidnen, um gegen den Killerwal zu kämpfen.",
+        "howIOrganised": "Wie hältst Du Deinen Code sauber und wartbar? Hast Du das Projekt in wiederverwendbare Module und Komponenten unterteilt? Konzentriere Dich auf die Dokumentation, Beschriftung, Variablen, Klassen und Tests.",
+        "learnings": "Ich versuche immer neue Technologien zu erlernen, sodass mir die Arbeit an diesem Projekt besonders viele Freude bereitet hat. So bekam ich einen tiefen Einblick in das Framework Angular, mit dem ich moderne Webdanwendungen effizient und strukturiert umsetzen konnte."
+    },
+    "project_card_3": {
+        "aboutThisProject": "Ein durch Kaban-Systeme inspirierter Task-Manager. Erstelle und organisiere Aufgaben per Drag-and-Drop und weise Benutzer und Kategorien zu.",
+        "howIOrganised": "Wie hältst Du Deinen Code sauber und wartbar? Hast Du das Projekt in wiederverwendbare Module und Komponenten unterteilt? Konzentriere Dich auf die Dokumentation, Beschriftung, Variablen, Klassen und Tests.",
+        "groupWorkExperience": "Wie viele Leute waren in Deinem Team und welche Aufgaben hast Du übernommen? Beschreibe Deine Aufgaben in 1 - 2 Sätzen, wie beispielsweise: Login-Formular, Dashboard, oder Chat-Funktionen. Welche Technologien hast Du verwendet? Vergiss nicht gute Zusammenarbeit und Teamarbeit zu unterstreichen."
+    },
+    "project_card_4": {
+        "aboutThisProject": "Woran arbeitest Du aktuell und welche Eigenschaften implementierst Du? Was ist der Schlüssel zum Erfolg in Deinen Projekten? Hier kannst Du eine gute Planung, die Code-Qualität and  Ausführung anmerken. Zeige eine Leidenschaft neue Technologien zu erlernen und Deine Fähigkeiten konstant zu verbessern."
     }
 }
