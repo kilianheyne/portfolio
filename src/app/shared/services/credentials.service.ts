@@ -10,20 +10,23 @@ export class CredentialsService {
     {
       name: 'Sahra Müller',
       project: 'DA Bubble',
-      comment: '"Claudia had to develop, format and deliver content in collaboration with the team members. She is a reliable and friendly person."',
+      comment: 'credential_1.comment',
       profile: 'LinkedIn Profile',
+      link: '',
     },
     {
-      name: 'Sahra Müller',
-      project: 'DA Bubble',
-      comment: '"Claudia had to develop, format and deliver content in collaboration with the team members. She is a reliable and friendly person."',
+      name: 'James Rugman',
+      project: 'Join',
+      comment: 'credential_2.comment',
       profile: 'LinkedIn Profile',
+      link: '',
     },
     {
-      name: 'Sahra Müller',
-      project: 'DA Bubble',
-      comment: '"Claudia had to develop, format and deliver content in collaboration with the team members. She is a reliable and friendly person."',
+      name: 'Evelyn Marx',
+      project: 'Sharkie',
+      comment: 'credential_3.comment',
       profile: 'LinkedIn Profile',
+      link: '',
     },
   ];
 

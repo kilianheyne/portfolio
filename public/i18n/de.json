@@ -51,5 +51,21 @@
     },
     "project_card_4": {
         "aboutThisProject": "Woran arbeitest Du aktuell und welche Eigenschaften implementierst Du? Was ist der Schlüssel zum Erfolg in Deinen Projekten? Hier kannst Du eine gute Planung, die Code-Qualität and  Ausführung anmerken. Zeige eine Leidenschaft neue Technologien zu erlernen und Deine Fähigkeiten konstant zu verbessern."
+    },
+    "mate-refs": {
+        "h4": "Teamspieler gesucht? Das sagen meine Kollegen über mich"
+    },
+    "credential": {
+        "project": "Projekt",
+        "profile": "LinkedIn Profil"
+    },
+    "credential_1": {
+        "comment": "Claudia war dafür verantwortlich, Inhalte gemeinsam mit den Teammitgliedern zu entwickeln, zu formatieren und bereitzustellen. Sie ist eine zuverlässige und freundliche Person."
+    },
+    "credential_2": {
+        "comment": "Claudia ist eine verlässliche und freundliche Person. Sie arbeitet in einer strukturierten Vorhgehensweise und schreibt sauberen und nachvollziehbaren Code. Ich schätze sie als Kollegin."
+    },
+    "credential_3": {
+        "comment": "Sie ist eine vertrauenswürdige Kollegin und kann auch stressige Situationen und enge Zeitpläne bewältigen. Sie vereint strukturiertes arbeiten mit eindeutigem Code."
     }
 }

@@ -51,5 +51,21 @@
     },
     "project_card_4": {
         "aboutThisProject": "What are you currently working on and what features are you implementing? What is the key to success in your projects?  You can mention good planning, code quality and execution. Show a desire to learn new technologies and continually improve your skills."
+    },
+    "mate-refs": {
+        "h4": "Need a teamplayer? Here is what my colleagues said about me"
+    },
+    "credential": {
+        "project": "Project",
+        "profile": "LinkedIn Profile"
+    },
+    "credential_1": {
+        "comment": "Claudia had to develop, format and deliver content in collaboration with the team members. She is a reliable and friendly person."
+    },
+    "credential_2": {
+        "comment": "Claudia is a reliable and friendly person. Works in a structured way and write a clear code. I recommend her as a colleague."
+    },
+    "credential_3": {
+        "comment": "She is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code."
     }
 }

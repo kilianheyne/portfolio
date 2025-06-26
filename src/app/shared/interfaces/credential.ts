@@ -3,4 +3,5 @@ export interface Credential {
     project: string;
     comment: string;
     profile: string;
+    link: string;
 }
