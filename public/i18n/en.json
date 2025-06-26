@@ -20,6 +20,9 @@
         "learning_span": "I am currently learning",
         "learning_p": "Exploring new technologies, furthering my skills and reworking ideas into even simpler solutions is what drives me as a developer."
     },
+    "my-projects": {
+        "h3": "My Projects"
+    },
     "contact-me": {
         "h3": "Contact me",
         "contact_infos_p": "Feel free to get in touch with jobs or opportunities if you are looking for a freshly made and highly motivated developer to join your team. Based on my current skills I am open to learn even more and help building meaningful digital products."

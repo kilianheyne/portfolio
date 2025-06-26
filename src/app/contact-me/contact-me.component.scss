@@ -44,19 +44,46 @@ section {
 
     >div {
         width: 50%;
-        >div {
+        >a {
             display: flex;
             align-items: center;
             gap: 16px;
 
+            &:hover #e-mail-icon {
+                background: url('../../../public/assets/images/contact-me/e-mail-icon-hover.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            &:hover #phone-icon {
+                background: url('../../../public/assets/images/contact-me/phone-icon-hover.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            &:hover >span {
+                color: $light-blue;
+            }
+
+            #e-mail-icon, #phone-icon {
+                width: 30px;
+                height: 30px;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            #e-mail-icon {
+                background: url('../../../public/assets/images/contact-me/e-mail-icon.png');
+                background-repeat: no-repeat;
+            }
+
+            #phone-icon {
+                background: url('../../../public/assets/images/contact-me/phone-icon.png');
+            }
+
             >span {
                 font-size: 20px;
                 font-family: 'Josefin Sans';
-
-                &:hover {
-                    color: $light-blue;
-                    cursor: pointer;
-                }
             }
         }
     }

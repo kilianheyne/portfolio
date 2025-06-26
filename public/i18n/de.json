@@ -19,5 +19,8 @@
         "h3": "Meine Kompetenzen",
         "learning_span": "Aktuell lerne ich: ",
         "learning_p": "Neue Technologien entdecken, meine Fähigkeiten weiterentwickeln und Ideen in noch einfächere Lösungen zu verpacken - das ist, was mich als Entwickler täglich antreibt."
+    },
+    "my-projects": {
+        "h3": "Referenzen"
     }
 }
