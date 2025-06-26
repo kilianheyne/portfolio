@@ -75,9 +75,13 @@
         >a:first-of-type{
             background: $light-blue;
             color: $dark-blue;
+        }
 
+        .btn-style {
             &:hover {
+                animation: none; 
                 background: $creme-white;
+                transition: background 0.3s ease;
             }
         }
     }
