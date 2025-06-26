@@ -12,7 +12,6 @@ export class HeaderComponent {
 
   activeLanguage: string = '';
   hoveredLanguage: string = '';
-
   activeNav: string = '';
 
   // #endregion

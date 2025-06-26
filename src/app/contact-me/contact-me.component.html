@@ -58,22 +58,29 @@
                 <textarea #message="ngModel" [(ngModel)]="contactData.message" [ngClass]="{'error-border' : !message.valid && message.touched}" minlength="9" name="message" id="message" class="btn-style" required></textarea>
             </div>
             <div id="agreement">
-                <!-- <img
-                    src="assets/images/contact-me/privacy-policy/unchecked.png"
-                    alt=""
-                /> -->
-                <input type="checkbox" name="privacy-policy" id="privacy-policy" [(ngModel)]="contactData.privacyPolicy" #privacyPolicy="ngModel" required>
-                <span
-                    >I've read the
-                    <a href="">privacy policy </a>
-                    and agree to the processing of my data as outlined.
-                </span>
-                @if (privacyPolicy.touched && privacyPolicy.errors?.['required']) {
-                    <span class="error-msg">Please accept the privacy policy.</span>
-                }
+                <input 
+                    type="checkbox"
+                    id="privacy-policy"
+                    name="privacyPolicy" 
+                    [(ngModel)]="contactData.privacyPolicy" 
+                    #privacyPolicy="ngModel" 
+                    required
+                >
+                <label for="privacy-policy" class="custom-checkbox"></label>
+                <div id="span-container">
+                    <span
+                        >I've read the
+                        <a href="">privacy policy </a>
+                        and agree to the processing of my data as outlined.
+                    </span>
+                    @if (privacyPolicy.touched && privacyPolicy.errors?.['required']) {
+                        <span class="error-msg">Please accept the privacy policy.</span>
+                    }
+                </div>
+                
             </div>
             <div id="btn">
-                <input type="submit" value="Send" class="btn-style">
+                <input type="submit" value="Send" class="btn-style" [disabled]="!contactForm.valid">
             </div>
         </form>
     </div>
