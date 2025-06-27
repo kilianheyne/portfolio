@@ -6,6 +6,28 @@ section {
 
 #content-wrapper {
     padding: 0 265px 0 265px;
+
+    @include tablet {
+        padding: 0 48px 0 48px;
+    }
+
+    @include mobile {
+        padding: 0 24px 0 24px;
+    }
+
+    >span {
+        font-family: 'Josefin Sans';
+        font-size: 20px;
+        color: $light-blue;
+        display: none;
+        width: 100%;
+        justify-content: center;
+        margin-top: 48px;
+
+        @include tablet {
+            display: flex;
+        }
+    }
 }
 
 #arrow-up-btn {
@@ -16,6 +38,10 @@ section {
     display: flex;
     justify-content: center;
     cursor: pointer;
+
+    @include tablet {
+        display: none;
+    }
 
     a {
         display: flex;
@@ -35,15 +61,31 @@ section {
     width: 100%;
     gap: 36px;
 
+    @include tablet {
+        flex-direction: column-reverse;
+    }
+
     >p {
         width: 50%;
         font-family: 'Josefin Sans';
         font-size: 18px;
         text-align: justify;
+
+        @include tablet {
+            width: 100%;
+        }
     }
 
     >div {
         width: 50%;
+
+        @include tablet {
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 16px;
+        }
+
         >a {
             display: flex;
             align-items: center;
@@ -98,7 +140,9 @@ form {
         font-family: 'Josefin Sans';
         padding-left: 27px;
 
-        
+        @include tablet {
+            display: none;
+        }
     }
 
     .error-msg {
@@ -108,6 +152,11 @@ form {
     #upper-form {
         gap: 20px;
         margin-bottom: 16px;
+
+        @include tablet {
+            display: flex; 
+            flex-direction: column; 
+        }
     }
 
     >div {
@@ -118,6 +167,10 @@ form {
             display: flex;
             flex-direction: column;
             width: 50%;
+
+            @include tablet {
+                width: 100%;
+            }
         }
     }
 
@@ -135,9 +188,16 @@ form {
     #agreement {
         margin-bottom: 16px;
         display: flex;
+        width: 100%;
         justify-content: start;
         align-items: center;
         gap: 5px;
+
+        label {
+            @include tablet {
+                display: flex;
+            }
+        }
 
         input[type="checkbox"] {
             opacity: 0;
@@ -176,15 +236,43 @@ form {
             transform: rotateZ(0deg);
         }
 
-        span {
-            font-family: 'Josefin Sans';
-            font-weight: 400;
-            font-size: 14px;
-
-            a {
-                color: $light-blue;
+        #span-container {
+            display: flex;
+            width: 100%;
+            span {
+                font-family: 'Josefin Sans';
+                font-weight: 400;
+                font-size: 14px;
+                width: 100%;
+    
+                a {
+                    color: $light-blue;
+                }
             }
         }
+        
+    }
+}
+
+#mobile-arrow-up-btn {
+    display: none;
+    justify-content: center;
+    margin-top: 112px;
+
+    @include tablet {
+        display: flex;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-style {
+        padding: 35px 15px 35px 15px;
+        height: 90px;
+        width: 40px;
     }
 }
 

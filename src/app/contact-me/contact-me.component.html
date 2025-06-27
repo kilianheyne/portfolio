@@ -1,16 +1,13 @@
 <section>
     <div id="arrow-up-btn">
         <a href="#abf" class="btn-style">
-            <img
-                src="assets/images/contact-me/arrow-up.png"
-                alt="arrow-up"
-            />
+            <img src="assets/images/contact-me/arrow-up.png" alt="arrow-up" />
         </a>
     </div>
     <div id="content-wrapper" class="content-limit">
-        <h3>{{ 'contact-me.h3' | translate }}</h3>
+        <h3>{{ "contact-me.h3" | translate }}</h3>
         <div id="contact-infos">
-            <p>{{ 'contact-me.contact' | translate }}</p>
+            <p>{{ "contact-me.contact" | translate }}</p>
             <div>
                 <a href="">
                     <div id="e-mail-icon"></div>
@@ -22,66 +19,125 @@
                 </a>
             </div>
         </div>
+        <span>Let us work together</span>
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <div id="upper-form">
                 <div>
                     @if(!name.valid && name.touched){
-                        <label class="error-msg" for="name">{{ 'contact-me.error_name' | translate }}</label>
+                    <label class="error-msg" for="name">{{"contact-me.error_name" | translate}}</label>
                     } @else {
-                        <label for="name">{{ 'contact-me.name' | translate }}</label>
+                    <label for="name">{{"contact-me.name" | translate}}</label>
                     }
-                    <input #name="ngModel" [(ngModel)]="contactData.name" [ngClass]="{'error-border' : !name.valid && name.touched}" type="text" name="name" id="name" class="btn-style" required/>
+                    <input
+                        placeholder="{{ 'contact-me.name' | translate }}"
+                        #name="ngModel"
+                        [(ngModel)]="contactData.name"
+                        [ngClass]="{'error-border': !name.valid && name.touched}"
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="btn-style"
+                        required
+                    />
                 </div>
                 <div>
-                    @if(!email.valid && email.touched){
-                        @if (email.errors?.['required']) {
-                            <label class="error-msg" for="email">{{ 'contact-me.error_email' | translate }}</label>
+                    @if(!email.valid && email.touched){ 
+                        @if(email.errors?.['required']) {
+                            <label class="error-msg" for="email">{{"contact-me.error_email" | translate}}</label>
                         } @else if (email.errors?.['pattern']) {
-                            <label class="error-msg" for="email">{{ 'contact-me.error_email_2' | translate }}</label>
-                        }
+                            <label class="error-msg" for="email">{{"contact-me.error_email_2" | translate}}</label>
+                        } 
                     } @else {
-                        <label for="email">{{ 'contact-me.email' | translate }}</label>
+                        <label for="email">{{"contact-me.email" | translate}}</label>
                     }
-                    <input #email="ngModel" [(ngModel)]="contactData.email" [ngClass]="{'error-border' : !email.valid && email.touched}" type="email" name="email" id="email" class="btn-style" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"/>
+                    <input
+                        placeholder="{{ 'contact-me.email' | translate }}"
+                        #email="ngModel"
+                        [(ngModel)]="contactData.email"
+                        [ngClass]="{
+                            'error-border': !email.valid && email.touched
+                        }"
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="btn-style"
+                        required
+                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                    />
                 </div>
             </div>
             <div id="your-msg">
-                @if(!message.valid && message.touched){
-                    @if (message.errors?.['required']) {
-                        <label class="error-msg">{{ 'contact-me.error_msg' | translate }}</label>
-                    } @else if (message.errors?.['minlength']) {
-                        <label class="error-msg">{{ 'contact-me.error_msg_2' | translate }} {{message.errors?.['minlength'].requiredLength}} {{ 'contact-me.error_msg_3' | translate }} ({{ 'contact-me.error_msg_4' | translate }} {{ message.errors?.['minlength'].actualLength }})</label>
-                    }
-                } @else {
-                    <label>{{ 'contact-me.msg' | translate }}</label>
+                @if(!message.valid && message.touched){ @if
+                (message.errors?.['required']) {
+                <label class="error-msg">{{
+                    "contact-me.error_msg" | translate
+                }}</label>
+                } @else if (message.errors?.['minlength']) {
+                <label class="error-msg"
+                    >{{ "contact-me.error_msg_2" | translate }}
+                    {{message.errors?.['minlength'].requiredLength}}
+                    {{ "contact-me.error_msg_3" | translate }} ({{
+                        "contact-me.error_msg_4" | translate
+                    }}
+                    {{ message.errors?.['minlength'].actualLength }})</label
+                >
+                } } @else {
+                <label>{{ "contact-me.msg" | translate }}</label>
                 }
-                <textarea #message="ngModel" [(ngModel)]="contactData.message" [ngClass]="{'error-border' : !message.valid && message.touched}" minlength="9" name="message" id="message" class="btn-style" required></textarea>
+                <textarea
+                    placeholder="{{ 'contact-me.msg' | translate }}"
+                    #message="ngModel"
+                    [(ngModel)]="contactData.message"
+                    [ngClass]="{
+                        'error-border': !message.valid && message.touched
+                    }"
+                    minlength="9"
+                    name="message"
+                    id="message"
+                    class="btn-style"
+                    required
+                ></textarea>
             </div>
             <div id="agreement">
-                <input 
+                <input
                     type="checkbox"
                     id="privacy-policy"
-                    name="privacyPolicy" 
-                    [(ngModel)]="contactData.privacyPolicy" 
-                    #privacyPolicy="ngModel" 
+                    name="privacyPolicy"
+                    [(ngModel)]="contactData.privacyPolicy"
+                    #privacyPolicy="ngModel"
                     required
-                >
+                />
                 <label for="privacy-policy" class="custom-checkbox"></label>
                 <div id="span-container">
                     <span
-                        >{{ 'contact-me.policy' | translate }}
-                        <a href="">{{ 'contact-me.policy_2' | translate }}</a>
-                        {{ 'contact-me.policy_3' | translate }}
+                        >{{ "contact-me.policy" | translate }}
+                        <a href="">{{ "contact-me.policy_2" | translate }}</a>
+                        {{ "contact-me.policy_3" | translate }}
                     </span>
-                    @if (privacyPolicy.touched && privacyPolicy.errors?.['required']) {
-                        <span class="error-msg">{{ 'contact-me.error_policy' | translate }}</span>
+                    @if (privacyPolicy.touched &&
+                    privacyPolicy.errors?.['required']) {
+                    <span class="error-msg">{{
+                        "contact-me.error_policy" | translate
+                    }}</span>
                     }
                 </div>
-                
             </div>
             <div id="btn">
-                <input type="submit" value="{{ 'contact-me.submit' | translate }}" class="btn-style" [disabled]="!contactForm.valid">
+                <input
+                    type="submit"
+                    value="{{ 'contact-me.submit' | translate }}"
+                    class="btn-style"
+                    [disabled]="!contactForm.valid"
+                />
             </div>
         </form>
+        <div id="mobile-arrow-up-btn">
+            <a href="#abf" class="btn-style">
+                <img
+                    src="assets/images/contact-me/arrow-up.png"
+                    alt="arrow-up"
+                />
+            </a>
+        </div>
     </div>
 </section>
