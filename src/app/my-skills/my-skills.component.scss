@@ -6,6 +6,14 @@ section {
 
 #content-wrapper {
     padding: 0 280px 0 280px;
+
+    @include tablet {
+        padding: 0 48px 0 48px;
+    }
+
+    @include mobile {
+        padding: 0 24px 0 24px;
+    }
 }
 
 #my-skills {
@@ -13,11 +21,25 @@ section {
     @include dFlex($jc: center, $ai: center, $fd: row);
     gap: 40px;
 
+    @include tablet {
+        flex-direction: column;
+        gap: 56px;
+    }
+
     #skill-overview {
         @include dFlex($jc: flex-start);
         flex-wrap: wrap;
         width: 50%;
         gap: 48px;
+
+        @include tablet {
+            width: 100%;
+            padding: 0 48px 0 48px;
+        }
+
+        @include mobile {
+            padding: 0 24px 0 24px;
+        }
     
         >div {
             @include dFlex($fd: column);
@@ -35,6 +57,17 @@ section {
         }
     }
 
+    >span {
+        display: none; 
+        color: $light-blue;
+        font-family: 'Josefin Sans';
+        font-size: 18px;
+
+        @include tablet {
+            display: flex;
+        }
+    }
+
     #learning {
         @include dFlex($fd: column);
         width: 400px;
@@ -43,6 +76,13 @@ section {
         font-family: 'Josefin Sans';
         padding: 0 35px 0 35px;
         font-size: 18px;
+
+        @include tablet {
+            width: 100%;
+            height: auto;
+            padding: 0;
+            flex-direction: row-reverse;
+        }
         
         &::before {
             content: '';
@@ -53,6 +93,10 @@ section {
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
+
+            @include tablet {
+                display: none;
+            }
         }
     
         &:hover::before {
@@ -66,10 +110,42 @@ section {
             background-repeat: no-repeat;
         }
 
+        >span {
+            @include tablet {
+                display: none;
+            }
+        }
+
         #current-learnings {
             display: flex;
             align-items: center;
             gap: 18px;
+
+            @include tablet {
+                width: 50%;
+                height: 120px;
+                justify-content: center;
+                flex-direction: row-reverse;
+            }
+
+            @include mobile {
+                width: 33%;
+                height: 100px;
+            }
+
+            &::before {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: url('../../../public/assets/images/my-skills/mobile/current-learnings-background.png');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+    
+                @include tablet {
+                    content: '';
+                }
+            }
 
             .flexCo {
                 display: flex;
@@ -83,6 +159,24 @@ section {
         
         >p {
             text-align: center;
+
+            @include tablet {
+                text-align: left;
+            }
+        }
+    }
+
+    #lets-talk-btn {
+        display: none; 
+        justify-content: center;
+
+        @include tablet {
+            display: flex;
+        }
+
+        .btn-style {
+            background: $light-blue;
+            color: $dark-grey;
         }
     }
 }

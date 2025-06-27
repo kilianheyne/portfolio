@@ -18,6 +18,7 @@
     "my-skills": {
         "h3": "Meine Kompetenzen",
         "learning_span": "Aktuell lerne ich: ",
+        "mobile_learning_span": "Was ich aktuell lerne",
         "learning_p": "Neue Technologien entdecken, meine Fähigkeiten weiterentwickeln und Ideen in noch einfächere Lösungen zu verpacken - das ist, was mich als Entwickler täglich antreibt."
     },
     "my-projects": {
