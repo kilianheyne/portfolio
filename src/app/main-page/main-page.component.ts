@@ -7,10 +7,11 @@ import { MyProjectsComponent } from "../my-projects/my-projects.component";
 import { MateRefsComponent } from "../mate-refs/mate-refs.component";
 import { ContactMeComponent } from "../contact-me/contact-me.component";
 import { FooterComponent } from "../shared/footer/footer.component";
+import { MobileHeaderComponent } from "../shared/mobile-header/mobile-header.component";
 
 @Component({
   selector: 'app-main-page',
-  imports: [AboveTheFoldComponent, HeaderComponent, WhyMeComponent, MySkillsComponent, MyProjectsComponent, MateRefsComponent, ContactMeComponent, FooterComponent],
+  imports: [AboveTheFoldComponent, HeaderComponent, WhyMeComponent, MySkillsComponent, MyProjectsComponent, MateRefsComponent, ContactMeComponent, FooterComponent, MobileHeaderComponent],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss'
 })
