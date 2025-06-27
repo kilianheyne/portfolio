@@ -13,12 +13,21 @@ section {
     display: flex;
     padding: 41px 114px 0 114px;
 
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
     #image-container {
         display: flex;
         justify-content: center;
         align-items: end;
         width: 50%;
     
+        @include tablet {
+            display: none;
+        }
     
         img {
             width: 100%;
@@ -36,6 +45,10 @@ section {
             background-size: contain;
             background-position: center;
             transform: rotate(-45deg);
+
+            @include tablet {
+                display: none;
+            }
         }
     
         &:hover::before {
@@ -45,16 +58,55 @@ section {
         }
     }
 
+    #mobile-image-container {
+        width: 90%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        .ellipse-bg {
+            position: absolute;
+            width: 312px;
+            height: 326px;
+            background: url('../../../public/assets/images/hero-section/mobile/portrait-background.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            z-index: 1;
+        }
+
+        img {
+            position: absolute;
+            bottom: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 5;
+            height: 70%;
+            object-fit: contain;
+        }
+    }
+
     #presi-container {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         flex-grow: 1;
+
+        @include tablet {
+            justify-content: start;
+            gap: 32px;
+        }
     
         #headband {
             display: flex;
             justify-content: space-between;
             margin-bottom: 50px; 
+
+            @include tablet {
+                display: none;
+            }
     
             #logo {
                 @include dFlex($fd: column, $jc: end);

@@ -68,6 +68,36 @@ $green: #95e063;
     flex-direction: $fd;
 }
 
+@mixin mobile{
+    @media (max-width: 640px) {
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin notebook{
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media (min-width: 1025px) {
+        @content;
+    }
+}
+
+@mixin bigscreen{
+    @media (min-width: 1920px) {
+        @content;
+    }
+}
+
 // #endregion
 
 // #region headings
@@ -80,11 +110,19 @@ h1, h2, h3, h4 {
 h1 {
     font-size: 88px;
     margin-bottom: 16px;
+
+    @include mobile {
+        font-size: 48px;
+    }
 }
 
 h2 {
     font-size: 40px;
     font-family: 'Josefin Sans';
+
+    @include mobile {
+        font-size: 24px;
+    }
 }
 
 h3 {
@@ -92,6 +130,10 @@ h3 {
     margin-top: 104px;
     font-size: 60px;
     color: $light-blue;
+
+    @include mobile {
+        font-size: 32px;
+    }
 }
 
 h4 {
