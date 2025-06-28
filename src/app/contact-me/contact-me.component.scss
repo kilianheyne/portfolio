@@ -282,7 +282,11 @@ input[type="submit"]:disabled {
 }
 
 .error-border {
-    border: solid 1px #e34d36;
+    border: solid 1px $red;
+}
+
+.error-placeholder::placeholder {
+    color: $red;
 }
 
 #btn {

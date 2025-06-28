@@ -29,10 +29,13 @@
                     <label for="name">{{"contact-me.name" | translate}}</label>
                     }
                     <input
-                        placeholder="{{ 'contact-me.name' | translate }}"
+                        [placeholder]="getPlaceholder('name', name)"
                         #name="ngModel"
                         [(ngModel)]="contactData.name"
-                        [ngClass]="{'error-border': !name.valid && name.touched}"
+                        [ngClass]="{
+                            'error-border': !name.valid && name.touched,
+                            'error-placeholder': !name.valid && name.touched
+                        }"
                         type="text"
                         name="name"
                         id="name"
@@ -51,11 +54,12 @@
                         <label for="email">{{"contact-me.email" | translate}}</label>
                     }
                     <input
-                        placeholder="{{ 'contact-me.email' | translate }}"
+                        [placeholder]="getPlaceholder('email', email)"
                         #email="ngModel"
                         [(ngModel)]="contactData.email"
                         [ngClass]="{
-                            'error-border': !email.valid && email.touched
+                            'error-border': !email.valid && email.touched,
+                            'error-placeholder': !email.valid && email.touched
                         }"
                         type="email"
                         name="email"
@@ -85,11 +89,12 @@
                 <label>{{ "contact-me.msg" | translate }}</label>
                 }
                 <textarea
-                    placeholder="{{ 'contact-me.msg' | translate }}"
+                    [placeholder]="getPlaceholder('message', message)"
                     #message="ngModel"
                     [(ngModel)]="contactData.message"
                     [ngClass]="{
-                        'error-border': !message.valid && message.touched
+                        'error-border': !message.valid && message.touched,
+                        'error-placeholder': !message.valid && message.touched
                     }"
                     minlength="9"
                     name="message"
