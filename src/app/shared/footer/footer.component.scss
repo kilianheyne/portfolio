@@ -1,7 +1,11 @@
 @import '../../../styles.scss';
 
 footer {
-    height: 214px;    
+    height: 214px;
+
+    @include tablet {
+        height: 243px;
+    }
 
     >div {
         height: 100%;
