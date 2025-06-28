@@ -1,0 +1,74 @@
+<section>
+    <div id="content-wrapper" class="content-limit">
+        @if (project){
+            <div id="quick-view">
+                <h4>{{ project.name }}</h4>
+                <div id="quick-details">
+                    <span>
+                        {{ 'projects.tech' | translate }}: 
+                        <div>
+                            @for (item of project.techs; track $index) {
+                            <span> {{ item }}, </span>
+                            }
+                        </div>
+                    </span>
+                    <span>{{ 'projects.duration' | translate }} {{ project.duration }} {{ 'projects.weeks' | translate }}</span>
+                </div>
+                <img src="{{ project.screenshot }}" alt="{{ project.name }}" />
+            </div>
+            <div id="project-details">
+                <div class="bullet-point">
+                    <div class="bullet-point-heading">
+                        <img
+                            src="assets/images/my-projects/project-details-bulletpoint.png"
+                            alt="bullet-point"
+                        />
+                        <p>{{ 'projects.about' | translate }}</p>
+                    </div>
+                    <div >
+                        <p>{{ project.aboutThisProject | translate }}</p>
+                    </div>
+                </div>
+                <div class="bullet-point">
+                    <div class="bullet-point-heading">
+                        <img
+                            src="assets/images/my-projects/project-details-bulletpoint.png"
+                            alt=""
+                        />
+                        <p>{{ 'projects.organised' | translate }}</p>
+                    </div>
+                    <div>
+                        <p>{{ project.howIOrganised | translate }}</p>
+                    </div>
+                </div>
+                <div class="bullet-point">
+                    @if (project.groupProject) {
+                        <div class="bullet-point-heading">
+                            <img
+                                src="assets/images/my-projects/project-details-bulletpoint.png"
+                                alt=""
+                            />
+                            <p>{{ 'projects.group_experience' | translate }}</p>
+                        </div>
+                        <p>{{ project.groupWorkExperience | translate }}</p>
+                    } @else if (!project.groupProject) {
+                        <div>
+                            <div class="bullet-point-heading">
+                                <img
+                                    src="assets/images/my-projects/project-details-bulletpoint.png"
+                                    alt=""
+                                />
+                                <p>{{ 'projects.learnt' | translate }}</p>
+                            </div>
+                            <p>{{ project.whatHaveILearnt | translate }}</p>
+                        </div>
+                    }
+                </div>
+            </div>
+            <div id="live-test">
+                <a href="{{ project.liveTestUrl }}" class="btn-style">{{ 'projects.live_test' | translate }}</a>
+                <a href="{{ project.gitHubUrl }}" class="btn-style">GitHub</a>
+            </div>
+        }
+    </div>
+</section>

@@ -33,7 +33,8 @@
         "learnt": "Das habe ich gelernt",
         "tech": "Anwendungen",
         "live_test": "Vorschau",
-        "ongoing": "Aktuelles Projekt"
+        "ongoing": "Aktuelles Projekt",
+        "mobile-nav": "Projekt"
     },
     "project_card_1": {
         "aboutThisProject": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und -zusammenarbeit durch eine intuitive Benutzeroberfläche, Echtzeitnachrichten und eine leistungsstarke Kanalorganisation.",

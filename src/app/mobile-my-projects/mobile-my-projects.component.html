@@ -1,0 +1,15 @@
+<section>
+    <div id="content-wrapper" class="content-limit">
+        <h3>{{ 'my-projects.h3' | translate }}</h3>
+        <div id="nav-bar">
+            @for (item of projectListData.projectList; track $index) {
+                <div (click)="selectedProjectIndex = $index">{{ $index+1 }}. {{ 'projects.mobile-nav' | translate }}</div>
+            }
+        </div>
+        <div id="project-overview">
+            @if (selectedProjectIndex !== null) {
+                <app-mobile-projects [project]="projectListData.projectList[selectedProjectIndex]"></app-mobile-projects>
+            }
+        </div>
+    </div>
+</section>

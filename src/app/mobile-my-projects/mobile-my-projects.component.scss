@@ -1,0 +1,16 @@
+
+#nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    div {
+        font-family: 'Josefin Sans';
+        font-size: 32px;
+    }
+}
+
+#project-overview {
+    background: #2f3940;
+    border-radius: 7%;
+}

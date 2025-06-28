@@ -8,10 +8,11 @@ import { MateRefsComponent } from "../mate-refs/mate-refs.component";
 import { ContactMeComponent } from "../contact-me/contact-me.component";
 import { FooterComponent } from "../shared/footer/footer.component";
 import { MobileHeaderComponent } from "../shared/mobile-header/mobile-header.component";
+import { MobileMyProjectsComponent } from "../mobile-my-projects/mobile-my-projects.component";
 
 @Component({
   selector: 'app-main-page',
-  imports: [AboveTheFoldComponent, HeaderComponent, WhyMeComponent, MySkillsComponent, MyProjectsComponent, MateRefsComponent, ContactMeComponent, FooterComponent, MobileHeaderComponent],
+  imports: [AboveTheFoldComponent, HeaderComponent, WhyMeComponent, MySkillsComponent, MyProjectsComponent, MateRefsComponent, ContactMeComponent, FooterComponent, MobileHeaderComponent, MobileMyProjectsComponent],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss'
 })

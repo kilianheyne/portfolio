@@ -33,7 +33,8 @@
         "learnt": "What I have learnt",
         "tech": "Technologies",
         "live_test": "Live Test",
-        "ongoing": "Ongoing Project"
+        "ongoing": "Ongoing Project",
+        "mobile-nav": "Project"
     },
     "project_card_1": {
         "aboutThisProject": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
