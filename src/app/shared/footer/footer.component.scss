@@ -20,6 +20,12 @@ footer {
     height: 72px;
     padding: 0 112px 0 112px;
     @include dFlex($jc: space-between);
+
+    @include tablet {
+        flex-direction: column; 
+        height: 100%;
+        padding: 30px 63px 30px 63px;
+    }
 }
 
 #legal-notice {
@@ -27,6 +33,10 @@ footer {
     opacity: 80%;
     gap: 16px;
     height: 100%;
+
+    @include tablet {
+        display: none;
+    }
 
     >span, a {
         color: $dark-grey;
@@ -40,7 +50,6 @@ footer {
             cursor: pointer;
         }
     }
-
 }
 
 #logo {
@@ -64,4 +73,27 @@ footer {
     @include dFlex($ai: flex-end);
     height: 100%;
     gap: 16px;
+}
+
+#mobile-legal-notice {
+    @include dFlex($jc: space-between, $ai: center);
+    display: none;
+    opacity: 80%;
+    width: 100%;
+    height: 100%;
+
+    @include tablet {
+        display: flex;
+    }
+
+    >span, a {
+        color: $dark-grey;
+        font-family: 'Josefin Sans';
+        font-size: 18px;
+    }
+    >a{
+        &:hover {
+            color: $creme-white;
+        }
+    }
 }
