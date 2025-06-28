@@ -1,0 +1,25 @@
+@import '../../styles.scss';
+
+#content-wrapper {
+    padding: 0 265px;
+    font-family: 'Josefin Sans';
+
+    @include tablet {
+        padding: 0 44px;
+    }
+
+    @include mobile {
+        padding: 0 22px;
+    }
+}
+
+h2, h3 {
+    margin: 26px;
+    margin-top: 104px;
+    font-family: 'Anta';
+    color: $light-blue;
+}
+
+h3 {
+    font-size: 32px;
+}

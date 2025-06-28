@@ -1,5 +1,11 @@
 @import '../../styles.scss';
 
+section {
+    @include tablet {
+        display: none;
+    }
+}
+
 #nav-bar {
     display: flex;
     height: 97px;

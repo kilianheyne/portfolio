@@ -116,14 +116,11 @@
                 <div id="span-container">
                     <span
                         >{{ "contact-me.policy" | translate }}
-                        <a href="">{{ "contact-me.policy_2" | translate }}</a>
+                        <a routerLink="/privacy-policy">{{ "contact-me.policy_2" | translate }}</a>
                         {{ "contact-me.policy_3" | translate }}
                     </span>
-                    @if (privacyPolicy.touched &&
-                    privacyPolicy.errors?.['required']) {
-                    <span class="error-msg">{{
-                        "contact-me.error_policy" | translate
-                    }}</span>
+                    @if (privacyPolicy.touched && privacyPolicy.errors?.['required']) {
+                        <span class="error-msg">{{ "contact-me.error_policy" | translate }}</span>
                     }
                 </div>
             </div>

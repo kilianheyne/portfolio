@@ -1,12 +1,14 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm, NgModel } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import { TranslatePipe, TranslateDirective, TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: 'app-contact-me',
-  imports: [FormsModule, CommonModule, TranslatePipe, TranslateDirective],
+  imports: [FormsModule, CommonModule, TranslatePipe, TranslateDirective, RouterLink],
   templateUrl: './contact-me.component.html',
   styleUrl: './contact-me.component.scss'
 })
@@ -29,6 +31,21 @@ export class ContactMeComponent {
     message: '',
   }
 
+  mailTest: boolean = true;
+
+  post = {
+    endPoint: 'https://webdev-kilian.de/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
+
+  http = inject(HttpClient);
+
   // #endregion
   // #region constructor
 
@@ -45,9 +62,22 @@ export class ContactMeComponent {
 
   // #endregion
   // #region methods
-  onSubmit(form: NgForm){
-    if (form.valid && form.submitted) {
-      console.log(this.contactData);
+  onSubmit(ngForm: NgForm) {
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+        .subscribe({
+          next: (response) => {
+
+            ngForm.resetForm();
+          },
+          error: (error) => {
+            console.error(error);
+          },
+          complete: () => console.info('send post complete'),
+        });
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+
+      ngForm.resetForm();
     }
   }
 
@@ -89,5 +119,4 @@ export class ContactMeComponent {
   
     return this.placeholderText[field];
   }
-  
 }
