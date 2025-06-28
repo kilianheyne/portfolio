@@ -61,10 +61,14 @@ section {
     #mobile-image-container {
         width: 90%;
         height: 50%;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         overflow: hidden;
+
+        @include tablet {
+            display: flex;
+        }
 
         .ellipse-bg {
             position: absolute;
