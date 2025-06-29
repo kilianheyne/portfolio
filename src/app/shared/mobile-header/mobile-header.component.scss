@@ -2,9 +2,150 @@
 
 section {
     display: none;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 
     @include tablet {
         display: flex;
     }
+}
 
+#content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 31px;
+
+    height: 104px;
+    background: $dark-blue;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+
+    span {
+        font-size: 14px;
+    }
+
+    span:nth-child(2) {
+        font-family: 'Anta';
+    }
+
+    span:nth-child(3) {
+        font-family: 'Josefin Sans';
+        font-weight: 300;
+        color: $light-blue;
+    }
+}
+
+.burger-menu {
+    width: 30px;
+    height: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    span {
+        display: block;
+        height: 3px;
+        background: $creme-white;
+        transition: all 0.4s ease;
+    }
+
+    &.open {
+        span:nth-child(1) {
+            transform: translateY(15px) rotate(45deg);
+        }
+        span:nth-child(2) {
+            opacity: 0;
+        }
+        span:nth-child(3) {
+            transform: translateY(-15px) rotate(-45deg);
+        }
+    }
+}
+
+nav {
+    position: absolute;
+    width: 353px;
+    height: 370px;
+    top: 160%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background: url('../../../../public/assets/images/header/mobil/mobile-menu-bg.png');
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -20%);
+    transition: opacity 0.3s ease, transform 0.3s ease, z-index 0s linear 0.3s;
+    z-index: -100;
+
+    &.visible {
+        opacity: 1; 
+        pointer-events: auto;
+        transform: translate(-50%, 0%);
+        transition: opacity 0.3s ease, transform 0.3s ease, z-index 0s linear 0s;
+        z-index: 100;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        li {
+
+            a {
+                font-family: 'Josefin Sans';
+                font-size: 22px;
+                color: $dark-grey;
+
+                &.active {
+                    font-size: 20px;
+                    color: $creme-white;
+                }
+            }
+        }
+    }
+
+    #lingo-switch {
+        display: flex;
+        gap: 5px;
+
+        button {
+            border: none;
+            color: $dark-grey;
+            background: $light-blue;
+            font-family: 'Josefin Sans';
+            font-size: 18px;
+            width: 40px;
+            height: 30px;
+            cursor: pointer;
+            transition: background 0.5s ease, color 0.5s ease;
+
+            &:hover {
+                animation-name: fontColorHover;
+                animation-duration: 250ms;
+                animation-fill-mode: forwards;
+            }
+        }
+
+        button.active {
+            color: $creme-white;
+            background: url('../../../../public/assets/images/header/active-language.png');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
 }

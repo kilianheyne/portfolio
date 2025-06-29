@@ -1,3 +1,73 @@
 <section>
-    <p>mobile-header works!</p>
+    <div id="content-wrapper" class="content-limit">
+        <div id="logo">
+            <img
+                src="assets/images/hero-section/logo-icon.png"
+                alt="logo-icon"
+            />
+            <span>K.Heyne</span>
+            <span>developer</span>
+        </div>
+        <div 
+            class="burger-menu"
+            [class.open]="isOpen"
+            (click)="toggleMenu()"
+            >
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav [class.visible]="isOpen">
+            <ul>
+                <li>
+                    <a 
+                        href="#why-me"
+                        (click)="setActiveNav('why-me')"
+                        [class.active]="activeNav === 'why-me'"
+                        >{{ 'header.nav_a_1' | translate }}
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="#my-skills"
+                        (click)="setActiveNav('my-skills')"
+                        [class.active]="activeNav === 'my-skills'"
+                        >{{ 'header.nav_a_2' | translate }}
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="#my-projects"
+                        (click)="setActiveNav('my-projects')"
+                        [class.active]="activeNav === 'my-projects'"
+                        >{{ 'header.nav_a_3' | translate }}
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="#contact-me"
+                        (click)="setActiveNav('contact-me')"
+                        [class.active]="activeNav === 'contact-me'"
+                        >{{ 'header.nav_a_4' | translate }}
+                    </a>
+                </li>
+            </ul>
+            <div id="lingo-switch">
+                <button 
+                    [class.active]="activeLanguage === 'de' && hoveredLanguage !=='en'" 
+                    (click)="changeLanguage('de')"
+                    (mouseenter)="hoveredLanguage = 'de' "
+                    (mouseleave)="hoveredLanguage= '' "
+                    >DE
+                </button>
+                <button 
+                    [class.active]="activeLanguage === 'en' && hoveredLanguage !=='de'" 
+                    (click)="changeLanguage('en')"
+                    (mouseenter)="hoveredLanguage = 'en' "
+                    (mouseleave)="hoveredLanguage = '' "
+                    >EN
+                </button>
+            </div>
+        </nav>
+    </div>
 </section>
