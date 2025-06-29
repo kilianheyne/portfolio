@@ -3,10 +3,14 @@
         <h3>{{ 'my-projects.h3' | translate }}</h3>
         <div id="nav-bar">
             @for (item of projectListData.projectList; track $index) {
-                <div (click)="selectedProjectIndex = $index">{{ $index+1 }}. {{ item.name | translate }}</div>
+                <div 
+                    (click)="selectedProjectIndex = $index"
+                    >{{ $index+1 }}. {{ item.name | translate }}
+                </div>
             }
         </div>
-        <div id="project-overview">
+        <div id="project-overview"
+            [class.hidden]="!projectListData.projectList[selectedProjectIndex]">
             @if (selectedProjectIndex !== null) {
                 <app-project [project]="projectListData.projectList[selectedProjectIndex]"></app-project>
             }

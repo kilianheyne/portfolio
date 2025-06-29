@@ -1,0 +1,10 @@
+@import '../../../styles.scss';
+
+section {
+    display: none;
+
+    @include tablet {
+        display: flex;
+    }
+
+}

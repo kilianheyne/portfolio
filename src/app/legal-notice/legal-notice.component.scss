@@ -11,6 +11,18 @@ section {
     flex-direction: column;
     gap: 30px;
 
+    @include notebook {
+        padding: 0 88px;
+    }
+
+    @include tablet {
+        padding: 0 44px;
+    }
+
+    @include mobile {
+        padding: 0 22px;
+    }
+
     h2 {
         margin: 26px;
         margin-top: 104px;

@@ -12,6 +12,7 @@ section {
     width: 100%;
     align-items: center;
     padding: 0 102px 0 102px;
+    margin-bottom: -5px;
 
     >div {
         padding: 30px;
@@ -25,8 +26,12 @@ section {
             cursor: pointer;
         }
 
-        &:active {
+        &.active {
             background: #2f3940;
+            color: $creme-white;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            transition: background 0.3s ease, color 0.3s ease;
         }
     }
 }
