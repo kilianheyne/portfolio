@@ -5,14 +5,14 @@ section {
 }
 
 #content-wrapper {
-    padding: 0 265px 0 265px;
+    padding: 0 265px;
 
-    @include tablet {
-        padding: 0 48px 0 48px;
+    @include notebook {
+        padding: 0 48px;
     }
 
     @include mobile {
-        padding: 0 24px 0 24px;
+        padding: 0 24px;
     }
 
     >span {

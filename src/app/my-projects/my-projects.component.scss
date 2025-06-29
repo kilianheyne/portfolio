@@ -14,12 +14,25 @@ section {
     padding: 0 102px 0 102px;
     margin-bottom: -5px;
 
+    @include notebook {
+        padding: 0 40px;
+    }
+
     >div {
         padding: 30px;
         font-size: 30px;
         font-family: 'Josefin Sans';
         font-weight: 500;
         color: $light-blue;
+
+        @include notebook {
+            padding: 15px;
+            font-weight: 400;
+        }
+
+        @media (max-width: 855px) {
+            font-size: 26px;
+        }
 
         &:hover {
             color: $creme-white;
@@ -40,6 +53,10 @@ section {
     width: 100%;
     background: #2f3940;
     padding: 30px 102px 0 102px;
+
+    @include notebook {
+        padding: 30px 40px 0px 40px;
+    }
 }
 
 #project-details {

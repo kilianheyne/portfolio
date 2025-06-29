@@ -13,6 +13,10 @@ section {
     display: flex;
     padding: 41px 114px 0 114px;
 
+    @include notebook {
+        padding: 0 57px;
+    }
+
     @include tablet {
         flex-direction: column;
         align-items: center;
