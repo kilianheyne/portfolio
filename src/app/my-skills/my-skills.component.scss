@@ -7,6 +7,10 @@ section {
 #content-wrapper {
     padding: 0 280px;
 
+    @media (max-width: 1300px){
+        padding: 0 140px;
+    }
+
     @include notebook {
         padding: 0 96px;
     }

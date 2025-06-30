@@ -17,7 +17,7 @@ export class MobileHeaderComponent {
 
   // #region attributes
 
-  activeLanguage: string = '';
+  activeLanguage: string = 'en';
   hoveredLanguage: string = '';
   activeNav: string = '';
 

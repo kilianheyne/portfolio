@@ -10,7 +10,7 @@ import { TranslatePipe, TranslateDirective, TranslateService } from "@ngx-transl
 export class HeaderComponent {
   // #region attributes
 
-  activeLanguage: string = '';
+  activeLanguage: string = 'en';
   hoveredLanguage: string = '';
   activeNav: string = '';
 

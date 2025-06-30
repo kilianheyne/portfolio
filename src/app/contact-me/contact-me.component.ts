@@ -31,7 +31,7 @@ export class ContactMeComponent {
     message: '',
   }
 
-  mailTest: boolean = true;
+  mailTest: boolean = false;
 
   post = {
     endPoint: 'https://webdev-kilian.de/sendMail.php',

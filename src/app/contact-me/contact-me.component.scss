@@ -7,7 +7,7 @@ section {
 #content-wrapper {
     padding: 0 265px;
 
-    @include notebook {
+    @media (max-width: 1200px) {
         padding: 0 48px;
     }
 

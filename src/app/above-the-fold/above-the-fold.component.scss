@@ -27,6 +27,7 @@ section {
         display: flex;
         justify-content: center;
         align-items: end;
+        margin-bottom: -5px;
         width: 50%;
     
         @include tablet {
@@ -42,13 +43,25 @@ section {
         &::before {
             content: '';
             position: absolute;
-            width: 100%;
+            width: 90%;
             height: 100%;
             background: url('../../../public/assets/images/hero-section/image-backdrop.png');
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
-            transform: rotate(-45deg);
+            transform: rotate(-45deg) translateY(180px) translateX(-180px);
+
+            @media (max-width: 1550px){
+                width: 100%;
+            }
+
+            @media (max-width: 1170px){
+                transform: rotate(-45deg) translateY(200px) translateX(-200px);
+            }
+
+            @media (max-width: 950px){
+                transform: rotate(-45deg) translateY(230px) translateX(-230px);
+            }
 
             @include tablet {
                 display: none;
@@ -74,17 +87,6 @@ section {
             display: flex;
         }
 
-        // .ellipse-bg {
-        //     position: absolute;
-        //     width: 312px;
-        //     height: 326px;
-        //     background: url('../../../public/assets/images/hero-section/mobile/portrait-background.png');
-        //     background-repeat: no-repeat;
-        //     background-size: contain;
-        //     background-position: center;
-        //     z-index: 1;
-        // }
-
         img {
             position: absolute;
             bottom: 15%;
@@ -93,6 +95,10 @@ section {
             z-index: 5;
             height: 70%;
             object-fit: contain;
+
+            @media (max-width: 440px) {
+                height: 50%;
+            }
         }
     }
 

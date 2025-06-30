@@ -12,17 +12,25 @@ section {
     display: flex;
     height: calc(97px + 3.5%);
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: end;
-    margin-bottom: -7%;
+    margin-bottom: -5%;
 
     >div {
-        padding: 4%;
+        padding: 30px;
         font-size: 30px;
         height: 85%;
         font-family: 'Josefin Sans';
         font-weight: 400;
         color: $creme-white;
+
+        @media (max-width: 743px){
+            font-size: 25px;
+        }
+
+        @media (max-width: 743px){
+            font-size: 25px;
+        }
 
         &.active {
             background: #2f3940;
@@ -36,5 +44,5 @@ section {
 
 #project-overview {
     background: #2f3940;
-    border-radius: 7%;
+    border-radius: 50px;
 }
