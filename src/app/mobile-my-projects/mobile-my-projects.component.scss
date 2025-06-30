@@ -29,7 +29,19 @@ section {
         }
 
         @media (max-width: 743px){
-            font-size: 25px;
+            padding: 20px;
+            height: 70%;
+        }
+
+        @media (max-width: 582px){
+            padding: 10px;
+            height: 60%;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        @media (max-width: 482px){
+            height: 45%;
         }
 
         &.active {
