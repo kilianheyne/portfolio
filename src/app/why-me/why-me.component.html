@@ -3,14 +3,14 @@
         <h3>{{ 'why-me.h3' | translate }}</h3>
         <div id="about-me">
             <div id="notes">
-                <div class="flex">
+                <!-- <div class="flex">
                     <img src="assets/images/why-me/location.png" alt="" />
                     <p>
                         <span>{{ 'why-me.location_span_1' | translate }}</span>
                         <span>{{ 'why-me.location_span_2' | translate }}</span>
                     </p>
                 </div>
-                <!-- <div class="flex">
+                <div class="flex">
                     <img src="assets/images/why-me/remote-work.png" alt="" />
                     <p>
                         <span>{{ 'why-me.work_span_1' | translate }}</span>
@@ -24,6 +24,12 @@
                         <span>{{ 'why-me.relocate_span_2' | translate }}</span>
                     </p>
                 </div> -->
+                <div class="flex">
+                    @if (currentSet) {
+                        <img [src]="currentSet.icon" alt="icon" [class.fade]="isFading" />
+                        <p><span>{{ typedText }}</span></p>
+                    }
+                </div>
             </div>
             <div id="description">
                 <p>{{ 'why-me.passion_about' | translate }}</p>

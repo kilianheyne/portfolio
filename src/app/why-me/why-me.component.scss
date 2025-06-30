@@ -1,8 +1,8 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
 section {
     color: white;
-    font-family: 'Josefin Sans';
+    font-family: "Josefin Sans";
 }
 
 #content-wrapper {
@@ -43,7 +43,7 @@ section {
         }
 
         p {
-            display: flex; 
+            display: flex;
             gap: 8px;
         }
 
@@ -59,7 +59,7 @@ section {
             width: 100%;
         }
 
-        >p {
+        > p {
             font-weight: 400;
             font-size: 18px;
             text-align: start;
@@ -83,4 +83,14 @@ section {
 .flex {
     display: flex;
     align-items: center;
+    gap: 16px;
+}
+
+img {
+    transition: opacity 0.4s ease;
+    opacity: 1;
+
+    &.fade {
+        opacity: 0;
+    }
 }

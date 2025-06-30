@@ -37,14 +37,14 @@
         "mobile-nav": "Project"
     },
     "project_card_1": {
-        "aboutThisProject": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
-        "howIOrganised": "How do you keep your code clean and maintainable? Have you broken the project down into reusable modules or components? Focus on documentation, naming files, variables, classes and testing.",
-        "groupWorkExperience": "How many people were in the team and what was your role? Describe your tasks in 1-2 sentences, for example: login form, dashboard or chat functionality. What technologies did you use? It is nice to mention good teamwork and cooperation."
+        "aboutThisProject": "This Pokédex is a self-built web app that fetches and displays data from the public PokéAPI. Users can scroll through a growing list of Pokémon, view detailed stats, and explore types and base values — all built without any frameworks, using only HTML, CSS, and vanilla JavaScript.",
+        "howIOrganised": "I began with a clean HTML and CSS layout to establish the basic structure and responsive design. Then I implemented API integration using JavaScript, including dynamic loading, error handling, and a modular code structure for better reusability and clarity. UI improvements and testing were done iteratively during development.",
+        "learnings": "This project strengthened my understanding of asynchronous data handling with fetch, Promises, and async/await. I also improved my skills in DOM manipulation, event handling, and organizing code into modular functions — all while building a more complex app architecture from scratch."
     },
     "project_card_2": {
-        "aboutThisProject": "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.",
-        "howIOrganised": "How do you keep your code clean and maintainable? Have you broken the project down into reusable modules or components? Focus on documentation, naming files, variables, classes and testing.",
-        "learnings": "As someone who is always trying to learn new technologies, you may have enjoyed working on this project because it allowed you to delve deep into a particular technology. Give details, such as the name of the framework or language you mean."
+        "aboutThisProject": "“El Pollo Loco” is a custom-built 2D side-scrolling game created entirely with HTML5, CSS, and JavaScript. Players control a main character through an animated level, collecting items, avoiding hazards, and facing enemies — all enriched with sound effects, game logic, and win/loss conditions.",
+        "howIOrganised": "I started by designing the game logic and implementing player controls and collision detection. Then I added animations, audio, and keyboard-based input. The project was gradually structured into classes and modules to keep the code clean, scalable, and easy to maintain.",
+        "learnings": "This project deepened my understanding of object-oriented programming in JavaScript, game loops, canvas rendering, and event-driven architecture. I also gained valuable experience in performance tuning and creating responsive, interactive gameplay."
     },
     "project_card_3": {
         "aboutThisProject": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
@@ -72,7 +72,7 @@
     },
     "contact-me": {
         "h3": "Contact me",
-        "contact": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work. Example: Feel free to get in touch with job offers or opportunities such as: ...",
+        "contact": "Are you looking for soemeone who not only executes ideas but also thinks ahead? I am open to project inquiries in the field of web development. Whether it is as a collaborations or a permanent position - I look forward to hearing from you",
         "name": "Your name",
         "error_name": "Your name is required",
         "email": "Your Email",

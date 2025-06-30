@@ -37,14 +37,14 @@
         "mobile-nav": "Projekt"
     },
     "project_card_1": {
-        "aboutThisProject": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und -zusammenarbeit durch eine intuitive Benutzeroberfläche, Echtzeitnachrichten und eine leistungsstarke Kanalorganisation.",
-        "howIOrganised": "Wie hältst Du Deinen Code sauber und wartbar? Hast Du das Projekt in wiederverwendbare Module und Komponenten unterteilt? Konzentriere Dich auf die Dokumentation, Beschriftung, Variablen, Klassen und Tests.",
-        "groupWorkExperience": "Wie viele Leute waren in Deinem Team und welche Aufgaben hast Du übernommen? Beschreibe Deine Aufgaben in 1 - 2 Sätzen, wie beispielsweise: Login-Formular, Dashboard, oder Chat-Funktionen. Welche Technologien hast Du verwendet? Vergiss nicht gute Zusammenarbeit und Teamarbeit zu unterstreichen."
+        "aboutThisProject": "Der Pokédex ist eine selbstentwickelte Web-App, die über die öffentliche PokéAPI Daten zu verschiedenen Pokémon lädt und darstellt. Nutzer:innen können durch eine Liste scrollen, Details zu jedem Pokémon anzeigen lassen und sich durch Typen und Basiswerte klicken – rein mit HTML, CSS und JavaScript.",
+        "howIOrganised": "Ich starte mit einer sauberen Struktur aus HTML und CSS, um das Grundlayout und responsive Verhalten festzulegen. Danach folgte die API-Anbindung mit JavaScript, inklusive dynamischem Laden, Error Handling und einer modularen Architektur für Wiederverwendbarkeit und Klarheit. Design-Iterationen und Testing erfolgen parallel in der Browser-Umgebung.",
+        "learnings": "Das Projekt hat mein Verständnis für asynchrone Datenverarbeitung (mit fetch, Promises & async/await) deutlich vertieft. Außerdem konnte ich meine Fähigkeiten in DOM-Manipulation, Eventhandling und modularer JavaScript-Architektur verbessern – und habe gelernt, komplexere Logiken sauber in kleinere Funktionen zu zerlegen."
     },
     "project_card_2": {
-        "aboutThisProject": "Ein simples Jump-n-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf Sharkie, Münzen und Giftflaschen zu fidnen, um gegen den Killerwal zu kämpfen.",
-        "howIOrganised": "Wie hältst Du Deinen Code sauber und wartbar? Hast Du das Projekt in wiederverwendbare Module und Komponenten unterteilt? Konzentriere Dich auf die Dokumentation, Beschriftung, Variablen, Klassen und Tests.",
-        "learnings": "Ich versuche immer neue Technologien zu erlernen, sodass mir die Arbeit an diesem Projekt besonders viele Freude bereitet hat. So bekam ich einen tiefen Einblick in das Framework Angular, mit dem ich moderne Webdanwendungen effizient und strukturiert umsetzen konnte."
+        "aboutThisProject": "„El Pollo Loco“ ist ein selbstentwickeltes 2D-Jump'n'Run-Spiel, das komplett mit HTML5, CSS und JavaScript umgesetzt wurde. Der Spieler steuert einen Charakter durch ein Level, weicht Gegner aus und sammelt Items. Schlussendlich tritt er gegen den Endboss an – inklusive Soundeffekten, Animationen und einer Vielzahl an Logiken.",
+        "howIOrganised": "Ich habe zunächst die Spiellogik geplant und die Charakterbewegungen sowie Kollisionsabfragen implementiert. Anschließend folgten Animationen, Soundeffekte und die Steuerung via Tastatur. Das Projekt wurde schrittweise modularisiert, damit die Codebasis wartbar und erweiterbar bleibt.",
+        "learnings": "Ich habe meine Kenntnisse in objektorientierter JavaScript-Programmierung, Klassenstrukturen, Game Loops und Event-Handling deutlich vertieft. Zudem konnte ich viele Erfahrungen im Bereich Performance-Optimierung, Canvas-Rendering und benutzerfreundlicher Interaktion sammeln."
     },
     "project_card_3": {
         "aboutThisProject": "Ein durch Kaban-Systeme inspirierter Task-Manager. Erstelle und organisiere Aufgaben per Drag-and-Drop und weise Benutzer und Kategorien zu.",
@@ -72,7 +72,7 @@
     },
     "contact-me": {
         "h3": "Kontakt",
-        "contact": "Ermutige Besucher Dich zu kontaktieren und beschreibe welche Jobs Dich interessieren. Zeige, dass Du durch Deine Arbeit einen Mehrwert bieten kannst. Beispiel: Ich lade Sie ein über mögliche Jobabgenobte zu sprechen, wie beispielsweise: ...",
+        "contact": "Suchst Du jemanden für eine spannende Zusammenarbeit? Ich strotze nur so vor Ideen und scheue mich nicht etwas Neues umzusetzen. Gerne schaue ich mir Deine Projektanfragen rund um Webentwicklung an und freue mich auf Kooperationen oder eine Festanstellung.",
         "name": "Dein Name",
         "error_name": "Dein Name wird benötigt",
         "email": "Deine E-Mail",

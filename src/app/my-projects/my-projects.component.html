@@ -5,6 +5,7 @@
             @for (item of projectListData.projectList; track $index) {
                 <div 
                     (click)="selectedProjectIndex = $index"
+                    [class.active]="selectedProjectIndex === $index"
                     >{{ $index+1 }}. {{ item.name | translate }}
                 </div>
             }

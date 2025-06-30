@@ -16,7 +16,7 @@ section {
     width: 100%;
     align-items: center;
     padding: 0 102px 0 102px;
-    margin-bottom: -5px;
+    margin-bottom: -3px;
 
     @include notebook {
         padding: 0 40px;
@@ -55,7 +55,7 @@ section {
 
 #project-overview {
     width: 100%;
-    background: $hover-blue;
+    background: #2f3940;
 
     display: flex; 
     justify-content: center;
