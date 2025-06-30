@@ -294,3 +294,17 @@ input[type="submit"]:disabled {
     width: 100%;
     justify-content: end;
 }
+
+#submit-feedback {
+    color: $green;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    margin-top: 24px;
+    text-align: right; 
+    opacity: 1; 
+    transition: opacity 0.3s ease-in-out;
+
+    &.fade-out {
+        opacity: 0; 
+    }
+}

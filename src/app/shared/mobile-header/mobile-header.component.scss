@@ -5,6 +5,7 @@ section {
     position: sticky;
     top: 0;
     z-index: 100;
+    background: $dark-blue;
 
     @include tablet {
         display: flex;
@@ -18,7 +19,7 @@ section {
     padding: 27px 31px;
 
     height: 104px;
-    background: $dark-blue;
+    
 }
 
 #logo {

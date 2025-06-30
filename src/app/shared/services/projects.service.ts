@@ -8,7 +8,7 @@ export class ProjectsService {
 
   projectList: Array<Project> = [
     {
-      name: 'DA Bubble',
+      name: 'Pokédex',
       duration: 3,
       aboutThisProject: 'project_card_1.aboutThisProject',
       howIOrganised: 'project_card_1.howIOrganised',
@@ -22,7 +22,7 @@ export class ProjectsService {
       groupProject: true,
       },
     {
-      name: 'Sharkie',
+      name: 'El Pollo Loco',
       duration: 5,
       aboutThisProject: 'project_card_2.aboutThisProject',
       howIOrganised: 'project_card_2.howIOrganised',
@@ -31,8 +31,8 @@ export class ProjectsService {
       techs: ['HTML', 'CSS', 'Javascript'],
       technologies: ['assets/images/my-projects/technologies/html.png', 'assets/images/my-projects/technologies/css.png', 'assets/images/my-projects/technologies/javascript.png'],
       screenshot: 'assets/images/my-projects/placeholder/sharkie.png',
-      liveTestUrl: 'https://kilian-heyne.developerakademie.net/pokedex-umbau/index.html',
-      gitHubUrl: 'https://github.com/kilianheyne/pokedex',
+      liveTestUrl: 'https://kilian-heyne.developerakademie.net/el-pollo-loco%20Abgabe/index.html',
+      gitHubUrl: 'https://github.com/kilianheyne/el-pollo-loco',
       groupProject: false,
     },
     {
@@ -45,8 +45,8 @@ export class ProjectsService {
       techs: ['HTML', 'CSS', 'Javascript'],
       technologies: ['assets/images/my-projects/technologies/html.png', 'assets/images/my-projects/technologies/css.png', 'assets/images/my-projects/technologies/javascript.png'],
       screenshot: 'assets/images/my-projects/placeholder/join.png',
-      liveTestUrl: 'https://kilian-heyne.developerakademie.net/pokedex-umbau/index.html',
-      gitHubUrl: 'https://github.com/kilianheyne/pokedex',
+      liveTestUrl: 'https://github.com/kilianheyne',
+      gitHubUrl: 'https://github.com/kilianheyne',
       groupProject: true,
     },
     {
@@ -59,8 +59,8 @@ export class ProjectsService {
       techs: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Vue.js', 'React'],
       technologies: ['assets/images/my-projects/technologies/html.png', 'assets/images/my-projects/technologies/css.png', 'assets/images/my-projects/technologies/javascript.png'],
       screenshot: 'assets/images/my-projects/placeholder/coming-soon.png',
-      liveTestUrl: 'https://kilian-heyne.developerakademie.net/pokedex-umbau/index.html',
-      gitHubUrl: 'https://github.com/kilianheyne/pokedex',
+      liveTestUrl: 'https://github.com/kilianheyne',
+      gitHubUrl: 'https://github.com/kilianheyne',
       groupProject: false,
     },
   ];

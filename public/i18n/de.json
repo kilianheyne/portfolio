@@ -87,7 +87,8 @@
         "policy_2": "Datenschutzrichtlinien",
         "policy_3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
         "error_policy": "Bitte akzeptiere die Datenschutzrichtlinien.",
-        "submit": "Senden"
+        "submit": "Senden",
+        "sent_message": "Nachricht gesendet!"
     },
     "footer": {
         "legal": "Impressum"

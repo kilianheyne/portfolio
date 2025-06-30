@@ -87,7 +87,8 @@
         "policy_2": "privacy policy",
         "policy_3": "and agree to the processing of my data as outlined.",
         "error_policy": "Please accept the privacy policy.",
-        "submit": "Send"
+        "submit": "Send",
+        "sent_message": "Message sent!"
     },
     "footer": {
         "legal": "Legal notice"

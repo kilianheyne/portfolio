@@ -2,6 +2,7 @@
 
 footer {
     height: 214px;
+    background: $light-blue;
 
     @include tablet {
         height: 243px;
@@ -13,7 +14,7 @@ footer {
 }
 
 #content-wrapper {
-    background: $light-blue;
+    
     height: 100%;
     display: flex;
     align-items: center;

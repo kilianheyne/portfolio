@@ -1,6 +1,10 @@
 @import '../../styles.scss';
 
 section {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+
     @include tablet {
         display: none;
     }
@@ -51,11 +55,18 @@ section {
 
 #project-overview {
     width: 100%;
-    background: #2f3940;
-    padding: 30px 102px 0 102px;
+    background: $hover-blue;
 
-    @include notebook {
-        padding: 30px 40px 0px 40px;
+    display: flex; 
+    justify-content: center;
+
+    >div {
+        width: 100%; 
+        padding: 30px 102px 0 102px;
+
+        @include notebook {
+            padding: 30px 40px 0px 40px;
+        }
     }
 }
 

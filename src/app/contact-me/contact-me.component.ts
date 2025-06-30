@@ -46,6 +46,9 @@ export class ContactMeComponent {
 
   http = inject(HttpClient);
 
+  mailSent: boolean = false;
+  fadeOut: boolean = false;
+
   // #endregion
   // #region constructor
 
@@ -67,8 +70,12 @@ export class ContactMeComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
+            this.mailSent = true;
+            this.fadeOut = false;
             ngForm.resetForm();
+
+            setTimeout(() => this.fadeOut = true, 2500);
+            setTimeout(() => this.mailSent = false, 3000);
           },
           error: (error) => {
             console.error(error);

@@ -132,6 +132,9 @@
                     [disabled]="!contactForm.valid"
                 />
             </div>
+            <div id="submit-feedback" *ngIf="mailSent" [class.fade-out]="fadeOut">
+                {{ 'contact-me.sent_message' | translate }}
+            </div>
         </form>
         <div id="mobile-arrow-up-btn">
             <a href="#abf" class="btn-style">

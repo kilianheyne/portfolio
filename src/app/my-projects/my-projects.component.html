@@ -9,8 +9,10 @@
                 </div>
             }
         </div>
-        <div id="project-overview"
-            [class.hidden]="!projectListData.projectList[selectedProjectIndex]">
+    </div>
+    <div id="project-overview"
+        [class.hidden]="!projectListData.projectList[selectedProjectIndex]">
+        <div  class="content-limit">
             @if (selectedProjectIndex !== null) {
                 <app-project [project]="projectListData.projectList[selectedProjectIndex]"></app-project>
             }
