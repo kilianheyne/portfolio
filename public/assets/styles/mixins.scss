@@ -1,0 +1,52 @@
+
+@mixin dFlex($jc: center, $ai: center, $fd: row) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
+
+@mixin font($ff: 'Josefin Sans', $fw: 400, $fs: 18px, $color){
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fs;
+    color: $color;
+}
+
+// @mixin animate()
+
+// @mixin background()
+
+// #region mobile
+
+@mixin mobile{
+    @media (max-width: 640px) {
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin notebook{
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media (min-width: 1025px) {
+        @content;
+    }
+}
+
+@mixin bigscreen{
+    @media (min-width: 1920px) {
+        @content;
+    }
+}
+
+// #endregion
