@@ -14,7 +14,6 @@ footer {
 }
 
 #content-wrapper {
-    
     height: 100%;
     display: flex;
     align-items: center;
@@ -29,8 +28,17 @@ footer {
     @include tablet {
         flex-direction: column; 
         height: 100%;
-        padding: 30px 63px 30px 63px;
+        padding: 30px 63px;
     }
+
+    @media (max-width: 410px){
+        padding: 20px 24px;
+    }
+
+    @media (max-width: 340px){
+        padding: 20px 24px;
+    }
+
 }
 
 #legal-notice {
@@ -89,6 +97,11 @@ footer {
 
     @include tablet {
         display: flex;
+    }
+
+    @media (max-width: 340px){
+        flex-direction: column;
+        justify-content: center;
     }
 
     >span, a {

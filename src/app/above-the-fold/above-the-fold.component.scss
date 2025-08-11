@@ -52,6 +52,10 @@ section {
             background-position: center;
             transform: rotate(-45deg) translateY(180px) translateX(-180px);
 
+            @include bigscreen {
+                transform: rotate(-45deg) translateY(500px) translateX(-500px);
+            }
+
             @media (max-width: 1550px){
                 width: 100%;
             }

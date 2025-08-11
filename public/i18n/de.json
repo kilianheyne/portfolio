@@ -55,7 +55,9 @@
         "aboutThisProject": "Woran arbeitest Du aktuell und welche Eigenschaften implementierst Du? Was ist der Schlüssel zum Erfolg in Deinen Projekten? Hier kannst Du eine gute Planung, die Code-Qualität and  Ausführung anmerken. Zeige eine Leidenschaft neue Technologien zu erlernen und Deine Fähigkeiten konstant zu verbessern."
     },
     "mate-refs": {
-        "h4": "Teamspieler gesucht? Das sagen meine Kollegen über mich"
+        "h4": "Teamspieler gesucht? Das sagen meine Kollegen über mich",
+        "h3": "Teamspieler gesucht?",
+        "span": "Teamspieler gesucht? Das sagen meine Kollegen über mich"
     },
     "credential": {
         "project": "Projekt",

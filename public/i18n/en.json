@@ -55,7 +55,9 @@
         "aboutThisProject": "What are you currently working on and what features are you implementing? What is the key to success in your projects?  You can mention good planning, code quality and execution. Show a desire to learn new technologies and continually improve your skills."
     },
     "mate-refs": {
-        "h4": "Need a teamplayer? Here is what my colleagues said about me"
+        "h4": "Need a teamplayer? Here is what my colleagues said about me",
+        "h3": "Need a teamplayer?",
+        "span": "Here is what my colleagues said about me"
     },
     "credential": {
         "project": "Project",
