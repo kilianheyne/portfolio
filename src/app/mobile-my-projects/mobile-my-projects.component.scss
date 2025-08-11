@@ -1,7 +1,7 @@
 @import '../../styles.scss';
 
 section {
-    display: none; 
+    display: none;
 
     @include tablet {
         display: flex;
