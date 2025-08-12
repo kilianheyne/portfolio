@@ -48,11 +48,11 @@
     },
     "project_card_3": {
         "aboutThisProject": "Ein durch Kaban-Systeme inspirierter Task-Manager. Erstelle und organisiere Aufgaben per Drag-and-Drop und weise Benutzer und Kategorien zu.",
-        "howIOrganised": "Wie hältst Du Deinen Code sauber und wartbar? Hast Du das Projekt in wiederverwendbare Module und Komponenten unterteilt? Konzentriere Dich auf die Dokumentation, Beschriftung, Variablen, Klassen und Tests.",
-        "groupWorkExperience": "Wie viele Leute waren in Deinem Team und welche Aufgaben hast Du übernommen? Beschreibe Deine Aufgaben in 1 - 2 Sätzen, wie beispielsweise: Login-Formular, Dashboard, oder Chat-Funktionen. Welche Technologien hast Du verwendet? Vergiss nicht gute Zusammenarbeit und Teamarbeit zu unterstreichen."
+        "howIOrganised": "Um den Code sauber und wartbar zu halten, habe ich das Projekt in wiederverwendbare Angular-Komponenten und Services unterteilt. Klare Ordnerstrukturen, aussagekräftige Variablen- und Klassennamen sowie konsistente Formatierung machten den Code leicht nachvollziehbar. Kommentare dokumentierten zentrale Funktionen, und wiederkehrende Logik wurde modular ausgelagert, um Redundanzen zu vermeiden.",
+        "groupWorkExperience": "Wir waren ein Team von 4 Personen und arbeiteten agil mit klarer Aufgabenteilung. Meine Hauptverantwortung lag in der Entwicklung der Summary-Ansicht, der Task-Board-Übersicht und der Filterfunktionen. Dabei nutzten wir Angular, TypeScript, Firebase und SCSS. Durch regelmäßige Abstimmungen im Team konnten wir schnell Feedback einholen und gemeinsam Lösungen finden."
     },
     "project_card_4": {
-        "aboutThisProject": "Woran arbeitest Du aktuell und welche Eigenschaften implementierst Du? Was ist der Schlüssel zum Erfolg in Deinen Projekten? Hier kannst Du eine gute Planung, die Code-Qualität and  Ausführung anmerken. Zeige eine Leidenschaft neue Technologien zu erlernen und Deine Fähigkeiten konstant zu verbessern."
+        "aboutThisProject": "Aktuell arbeite ich an DA Bubble, einer Chat- und Kollaborationsplattform ähnlich Slack. Dabei liegt mein Fokus auf der Implementierung von Echtzeit-Kommunikationsfunktionen, einer intuitiven Nutzeroberfläche und einer performanten Datenverwaltung. Der Schlüssel zum Erfolg ist für mich eine sorgfältige Planung, saubere Code-Struktur und kontinuierliches Testen, um eine hohe Code-Qualität sicherzustellen. Außerdem lege ich großen Wert darauf, ständig neue Technologien und Best Practices zu erlernen und anzuwenden – so bleibt mein Entwicklungsprozess stets innovativ und effizient."
     },
     "mate-refs": {
         "h4": "Teamspieler gesucht? Das sagen meine Kollegen über mich",

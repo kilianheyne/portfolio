@@ -17,47 +17,49 @@
                     <p>{{ project.aboutThisProject | translate }}</p>
                 </div>
             </div>
-            <div class="bullet-point">
-                <div>
-                    <img
-                        src="assets/images/my-projects/project-details-bulletpoint.png"
-                        alt=""
-                    />
-                </div>
-                <div class="bullet-point-heading">
+            @if (project.name != 'projects.ongoing') {
+                <div class="bullet-point">
                     <div>
-                        <p>{{ 'projects.organised' | translate }}</p>
-                        <span></span>
+                        <img
+                            src="assets/images/my-projects/project-details-bulletpoint.png"
+                            alt=""
+                        />
                     </div>
-                    <p>{{ project.howIOrganised | translate }}</p>
-                </div>
-            </div>
-            <div class="bullet-point">
-                <div>
-                    <img
-                        src="assets/images/my-projects/project-details-bulletpoint.png"
-                        alt=""
-                    />
-                </div>
-                @if (project.groupProject) {
                     <div class="bullet-point-heading">
                         <div>
-                            <p>{{ 'projects.group_experience' | translate }}</p>
+                            <p>{{ 'projects.organised' | translate }}</p>
                             <span></span>
                         </div>
-                        <p>{{ project.groupWorkExperience | translate }}</p>
+                        <p>{{ project.howIOrganised | translate }}</p>
                     </div>
-                }
-                @else if (!project.groupProject) {
-                    <div class="bullet-point-heading">
-                        <div>
-                            <p>{{ 'projects.learnt' | translate }}</p>
-                            <span></span>
+                </div>
+                <div class="bullet-point">
+                    <div>
+                        <img
+                            src="assets/images/my-projects/project-details-bulletpoint.png"
+                            alt=""
+                        />
+                    </div>
+                    @if (project.groupProject) {
+                        <div class="bullet-point-heading">
+                            <div>
+                                <p>{{ 'projects.group_experience' | translate }}</p>
+                                <span></span>
+                            </div>
+                            <p>{{ project.groupWorkExperience | translate }}</p>
                         </div>
-                        <p>{{ project.whatHaveILearnt | translate }}</p>
-                    </div>
-                }
-            </div>
+                    }
+                    @else if (!project.groupProject) {
+                        <div class="bullet-point-heading">
+                            <div>
+                                <p>{{ 'projects.learnt' | translate }}</p>
+                                <span></span>
+                            </div>
+                            <p>{{ project.whatHaveILearnt | translate }}</p>
+                        </div>
+                    }
+                </div>
+            }
         </div>
         <div id="project-visuals">
             <div id="tech">
@@ -69,10 +71,12 @@
                 </div>
             </div>
             <img src="{{ project.screenshot }}" alt="{{ project.name }}" />
-            <div id="live-test">
-                <a href="{{ project.liveTestUrl }}" class="btn-style" target="_blank">{{ 'projects.live_test' | translate }}</a>
-                <a href="{{ project.gitHubUrl }}" class="btn-style" target="_blank">GitHub</a>
-            </div>
+            @if (project.name != 'projects.ongoing') {
+                <div id="live-test">
+                    <a href="{{ project.liveTestUrl }}" class="btn-style" target="_blank">{{ 'projects.live_test' | translate }}</a>
+                    <a href="{{ project.gitHubUrl }}" class="btn-style" target="_blank">GitHub</a>
+                </div>
+            }
         </div>
         }
     </div>

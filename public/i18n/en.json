@@ -48,11 +48,11 @@
     },
     "project_card_3": {
         "aboutThisProject": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-        "howIOrganised": "How do you keep your code clean and maintainable? Have you broken the project down into reusable modules or components? Focus on documentation, naming files, variables, classes and testing.",
-        "groupWorkExperience": "How many people were in the team and what was your role? Describe your tasks in 1-2 sentences, for example: login form, dashboard or chat functionality. What technologies did you use? It is nice to mention good teamwork and cooperation."
+        "howIOrganised": "To keep the code clean and maintainable, I divided the project into reusable Angular components and services. Clear folder structures, meaningful variable and class names, and consistent formatting made the code easy to understand. Comments documented key functions, and recurring logic was outsourced in a modular fashion to avoid redundancies.",
+        "groupWorkExperience": "We were a team of four people and worked in an agile manner with a clear division of tasks. My main responsibility was developing the summary view, the task board overview, and the filter functions. We used Angular, TypeScript, Firebase, and SCSS. Regular team meetings enabled us to quickly gather feedback and find solutions together."
     },
     "project_card_4": {
-        "aboutThisProject": "What are you currently working on and what features are you implementing? What is the key to success in your projects?  You can mention good planning, code quality and execution. Show a desire to learn new technologies and continually improve your skills."
+        "aboutThisProject": "I am currently working on DA Bubble, a chat and collaboration platform similar to Slack. My focus is on implementing real-time communication features, an intuitive user interface, and high-performance data management. For me, the key to success is careful planning, clean code structure, and continuous testing to ensure high code quality. I also place great importance on constantly learning and applying new technologies and best practices—this keeps my development process innovative and efficient."
     },
     "mate-refs": {
         "h4": "Need a teamplayer? Here is what my colleagues said about me",
